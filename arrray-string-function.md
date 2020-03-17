@@ -1,6 +1,7 @@
+### Table of Contents
+
 | No. | Questions |
 |---- | ---------|
-
 
 ### Ques. What is the Array slice() Method?
 __Ans.__
@@ -55,13 +56,14 @@ Ques. How do you combine two or more arrays?
 __Ans.__ The concat() method is used to join two or more arrays by returning a new array containing all the elements.
 
 Syntex:- array1.concat(array2, array3, ..., arrayX)
-
+```javascript
 var veggies = ["Tomato", "Carrot", "Cabbage"];
 var fruits = ["Apple", "Orange", "Pears"];
 var veggiesAndFruits = veggies.concat(fruits);
 console.log(veggiesAndFruits); // Tomato, Carrot, Cabbage, Apple, Orange, Pears
-⬆ Back to Top
+```
 
+⬆ Back to Top
 ### Ques. What is the Array filter() Method?
 __Ans.__ The filter() method creates an array filled with all array elements that pass a test (provided as a function).
 
@@ -70,7 +72,7 @@ Note: filter() does not execute the function for array elements without values.
 Note: filter() does not change the original array.
 
 Syntex:- array.filter(function(currentValue, index, arr), thisValue)
-
+```javascript
 <button onclick="myFunction()">Try it</button>
 <p id="demo"></p>
 <script>
@@ -82,40 +84,41 @@ function myFunction() {
   document.getElementById("demo").innerHTML = ages.filter(checkAdult);
 }
 </script>
-⬆ Back to Top
+```
 
+⬆ Back to Top
 ### Ques. What is the Array push() Method?
 __Ans.__ The push() method adds new items to the end of an array, and returns the new length.
 
 Syntex:- array.push(item1, item2, ..., itemX)
 
 Example:-
-
+```javascript
 var fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.push("Kiwi","Mango");
 document.write(fruits);
-⬆ Back to Top
+```
 
+⬆ Back to Top
 ### Ques. What is the Array pop() Method?
 __Ans.__ The pop() method removes the last element of an array, and returns that element.
 
 Syntex:- array.pop()
-
-Example:-
-
+```javascript
 var fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.pop();
 document.write(fruits);
-⬆ Back to Top
+```
 
+⬆ Back to Top
 ### Ques. What is the Array shift() Method?
 __Ans.__ The shift() method removes the first item of an array.
-
-Example:-
-
+```javascript
 var fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.shift();
 document.write(fruits);	//Orange,Apple, Mango
+```
+
 ⬆ Back to Top
 
 ### Ques. What is the Array unshift() Method?
