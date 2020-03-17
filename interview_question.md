@@ -6047,26 +6047,27 @@ It makes little complex code
 You need to load a polyfill if ES6 is not supported
 ⬆ Back to Top
 
-Ques. What is the Array slice() Method?
-Ans.
-
-The slice() method returns the selected elements in array, as a new array object.
-The slice() method selects the elements starting at the given start argument, and ends at, but does not include, the given end argument.
+### Ques. What is the Array slice() Method?
+__Ans.__
+* The slice() method returns the selected elements in array, as a new array object.
+* The slice() method selects the elements starting at the given start argument, and ends at, but does not include, the given end argument.
+```javascript
 let arrayIntegers = [1, 2, 3, 4, 5,6];
 let arrayIntegers1 = arrayIntegers.slice(0,2); // returns [1,2]
 let arrayIntegers2 = arrayIntegers.slice(2,3); // returns [3]
 let arrayIntegers3 = arrayIntegers.slice(4); //returns [5,6]
 We made 2 objects called target and handler, target is a simple object with a message key and handler is an object that has a get key with a function associated with it.
+```
 
 ⬆ Back to Top
 
-Ques. What is the Array splice() Method?
-Ans. The splice() method adds/removes items to/from an array, and returns the remove items(s).
+### Ques. What is the Array splice() Method?
+__Ans.__ The splice() method adds/removes items to/from an array, and returns the remove items(s).
 
-Syntex:- array.aplice(index, remove_count, item1,item2, ....., itemX);
+__Syntex:-__ array.aplice(index, remove_count, item1,item2, ....., itemX);
 
 Example:- 1st position mtb add karna 2nd position mtb delete ho jana.
-
+```javascript
 var fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.splice(2, 0, "Lemon", "Kiwi");
 document.write(fruits);  // Banana,Orange,Lemon,Kiwi,Apple,Mango
@@ -6083,9 +6084,10 @@ let arrayIntegers2 = arrayIntegersOriginal2.splice(3); // returns [4, 5]; origin
 
 let arrayIntegersOriginal3 = [1, 2, 3, 4, 5];
 let arrayIntegers3 = arrayIntegersOriginal3.splice(3, 1, "a", "b", "c"); //returns [4]; original array: [1, 2, 3, "a", "b", "c", 5]
-⬆ Back to Top
+```
 
-Ques. What is the difference between slice & splice?
+⬆ Back to Top
+### Ques. What is the difference between slice & splice?
 Ans.
 
 slice()	splice()
