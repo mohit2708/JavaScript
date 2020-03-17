@@ -1,7 +1,5 @@
 # JavaScript Interview Questions & Answers
 
-> Click :star:if you like the project. Pull Request are highly appreciated. Follow me [@SudheerJonna](https://twitter.com/SudheerJonna) for technical updates.
-
 ### Table of Contents
 
 | No. | Questions |
@@ -14312,31 +14310,5 @@ function flattenMultiArray(arr) {
  }
 const multiDimensionalArr = [11, [22, 33], [44, [55, 66, [77, [88]], 99]]];
 const flatArr = flattenMultiArray(multiDimensionalArr); // [11, 22, 33, 44, 55, 66, 77, 88, 99]
-⬆ Back to Top
 
-What is the easiest multi condition checking?
-You can use indexOf to compare input with multiple values instead of checking each value as one condition.
 
-// Verbose approach
-if (input === 'first' || input === 1 || input === 'second' || input === 2) {
-  someFunction();
-}
-// Shortcut
-if (['first', 1, 'second', 2].indexOf(input) !== -1) {
-  someFunction();
-}
-⬆ Back to Top
-
-How do you capture browser back button?
-The window.onbeforeunload method is used to capture browser back button event. This is helpful to warn user about loosing the current data.
-
-window.onbeforeunload = function() {
-	alert("You work will be lost");
-};
-⬆ Back to Top
-
-How do you disable right click in the web page?
-The right click on the page can be disabled by returning false from oncontextmenu attribute on body element.
-
-<body oncontextmenu="return false;">
-⬆ Back to Top
