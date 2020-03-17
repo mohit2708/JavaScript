@@ -5463,15 +5463,15 @@ __Ans.__
 __Ans.__ ECMAScript (European Computer Manufacturers Association) Script is a specification for the scripting language standards. It has standardized Javascript which made Javascript the best implementation of ECMAScript.
 
 **[⬆ Back to Top](#table-of-contents)**
-###Ques. Difference between Java and JavaScript?
+### Ques. Difference between Java and JavaScript?
 __Ans.__
+|Java|JavaScript|
+|:---:|:---:|
+|Java is an OOP Programming Language.|javaScript is an OOP scripting language.|
+|It creates applications that run in a virtual machine or browser.|The code is run on a browser only.|
+|Java code needs to be compiled.|JavaScript code are all in the form of text.|
 
-Java	JavaScript
-Java is an OOP Programming Language.	javaScript is an OOP scripting language.
-It creates applications that run in a virtual machine or browser.	The code is run on a browser only.
-Java code needs to be compiled.	JavaScript code are all in the form of text.
-⬆ Back to Top
-
+**[⬆ Back to Top](#table-of-contents)**
 Ques. JavaScript Data Type?
 Ans. JavaScript variables can hold many data types.
 
