@@ -5494,48 +5494,55 @@ var c = 4.25e+6;    // exponential notation, same as 4.25e6 or 4250000
 var d = 4.25e-6;    // exponential notation, same as 0.00000425
 ```
 
-Boolean:– Represents true and false values
+__Boolean:–__ Represents true and false values
+```javascript
 var isReading = true;   // yes, I'm reading
 var isSleeping = false; // no, I'm not sleeping
-
 var a = 2, b = 5, c = 10; 
 alert(b > a) // Output: true
 alert(b > c) // Output: false
-Null:– Represents empty, nothing, and unknown type of values
+```
+
+__Null:–__ Represents empty, nothing, and unknown type of values
+```javascript
 var a = null;
 alert(a); // Output: null 
 var b = "Hello World!"
 alert(b); // Output: Hello World! 
 b = null;
 alert(b) // Output: null
-Object:– Used for storing collections of data or more complex entities
+```
+__Object:–__ Used for storing collections of data or more complex entities
+```javascript
 var person = {firstName:"John", lastName:"Doe", age:50, eyeColor:"blue"};
-Symbol – Used for creating unique identifiers for objects
-Undefined – Represents value not assigned. If a variable is only declared and not assigned in JS, then it represents the undefined data type
-⬆ Back to Top
+```
 
-Ques. What is the javaScript Variable?
-Ans.
+__Symbol:–__ Used for creating unique identifiers for objects
 
-A javaScript Variable is simply a name of storage location. There are 2 types of variable in javaScript.
-There are some rules with declaring a javascript varible.
-Name must start with a letter(a to z or A to Z), underscore (_), or dollar ( $ ) sign.
-After the first letter we can use digit (0 to 9), for example value1.
-JavaScript variable are case sensitive, for example x and X are diffrent
-We can declare variables to store data by using the var, let, or const keywords.
-javaScript includes variables which hold the data value and it can be changed anytime.
-To create a variable in JavaScript, use the let keyword.
-Variables named apple and AppLE are two different variables.
-⬆ Back to Top
+__Undefined–__ Represents value not assigned. If a variable is only declared and not assigned in JS, then it represents the undefined data type
 
-Ques. Difference between var and let?
-Ans.
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is the javaScript Variable?
+__Ans.__
+* A javaScript Variable is simply a name of storage location. There are 2 types of variable in javaScript.
+* There are some rules with declaring a javascript varible.
+* Name must start with a letter(a to z or A to Z), underscore (_), or dollar ( $ ) sign.
+* After the first letter we can use digit (0 to 9), for example value1.
+* JavaScript variable are case sensitive, for example x and X are diffrent
+* We can declare variables to store data by using the var, let, or const keywords.
+* javaScript includes variables which hold the data value and it can be changed anytime.
+* To create a variable in JavaScript, use the let keyword.
+* Variables named apple and AppLE are two different variables.
 
-Var	let
-It has a global/function scope.	It is limited to block scope.
-It can be declared globally and can be accessed globally.	It can be declared globally but cannot be accessed globally.
-It is hoisted.	It is not hoisted.
-Variable declared with var keyword can be re-declared and updated in the same scope.	Variable declared with let keyword can be updated but not re-declared.
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. Difference between var and let?
+__Ans.__
+|Var|let|
+|:---:|:---:|
+|It has a global/function scope.|It is limited to block scope.|
+|It can be declared globally and can be accessed globally.|It can be declared globally but cannot be accessed globally.|
+|It is hoisted.|It is not hoisted.|
+|Variable declared with var keyword can be re-declared and updated in the same scope.|Variable declared with let keyword can be updated but not re-declared.|
 Example:	
 function varGreeter(){ 
 var a = 10;
@@ -5578,20 +5585,18 @@ The name must contain only letters, digits, or the symbols $ and _.
 The first character must not be a digit.
 ⬆ Back to Top
 
-Ques. What is Operate in javascript?
-Ans.
+### Ques. What is Operate in javascript?
+__Ans.__
 
-Arithmetic Operators:- Addition(+), Subtraction(-), Multiplication(*), Exponentiation (ES2016)(**), Division(/), Modulus(Division Remainder)(%), Increment(++), Decrement(--).
+__Arithmetic Operators:-__ Addition(+), Subtraction(-), Multiplication(*), Exponentiation (ES2016)(**), Division(/), Modulus(Division Remainder)(%), Increment(++), Decrement(--).
 
-Assignment Operators:-
+__Assignment Operators:-__
 
-Comparison Operators:-
+__Comparison Operators:-__
 
-⬆ Back to Top
-
-Ques. What is the use of a Map object in JavaScript?
-Ans.
-
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is the use of a Map object in JavaScript?
+__Ans.__
 Map is a collection of keyed data items, just like an object. But the main difference is that map allows keys of any type.
 Map – is a collection of keyed values.
 The JavaScript Map object is used to map keys to values. It stores each element as key-value pair. It operates the elements such as search, update and delete on the basis of specified key.
