@@ -5399,14 +5399,13 @@ function userDetails(username) {
 | No. | Questions |
 |---- | ---------
 |  | [What is JavaScript?](#ques-What-is-JavaScript) |
+|  | [What is an ECMAScript?](#ques-What-is-an-ECMAScript)|
+|  | [Difference between Java and JavaScript?](#ques-Difference-between-Java-and-JavaScript)|
+|  | [JavaScript Data Type?](#ques-JavaScript-Data-Type?)|
 
 
 
 
-1	What is JavaScript?
-1	What is an ECMAScript?
-2	Difference between Java and JavaScript?
-3	JavaScript Data Type?
 5	What is the javaScript Variable?
 difference between var and Let?
 What is Operate in javascript?
@@ -5472,23 +5471,29 @@ __Ans.__
 |Java code needs to be compiled.|JavaScript code are all in the form of text.|
 
 **[⬆ Back to Top](#table-of-contents)**
-Ques. JavaScript Data Type?
-Ans. JavaScript variables can hold many data types.
+### Ques. JavaScript Data Type?
+__Ans.__ JavaScript variables can hold many data types.
 
 There are 7 primitive types: string, number, bigint, boolean, symbol, null and undefined.
 
-String:– Represents single-character, multi-character, and alphanumeric values
+__String:–__ Represents single-character, multi-character, and alphanumeric values
+```javascript
 let str = "Hello";
 var a = 'Hi there!';  // using single quotes
 var b = "Hi there!";  // using double quotes
 var a = "Let's have a cup of coffee."; //single quote inside double quotes
 var b = 'He said "Hello" and left.';  //double quotes inside single quotes
 var c = 'We\'ll never give up.';     //escaping single quote with backslash
-Number:– Represents both integer and floating point values
+```
+
+__Number:–__ Represents both integer and floating point values
+```javascript
 var a = 25;         // integer
 var b = 80.5;       // floating-point number
 var c = 4.25e+6;    // exponential notation, same as 4.25e6 or 4250000
 var d = 4.25e-6;    // exponential notation, same as 0.00000425
+```
+
 Boolean:– Represents true and false values
 var isReading = true;   // yes, I'm reading
 var isSleeping = false; // no, I'm not sleeping
