@@ -3,7 +3,12 @@
 ### Table of Contents
 
 | No. | Questions |
-|---- | ---------
+|---- | ---------|
+|  | [What is JavaScript?](#ques-What-is-JavaScript)|
+|  | [What is an ECMAScript?](#ques-What-is-an-ECMAScript)|
+|  | [Difference between Java and JavaScript?](#ques-Difference-between-Java-and-JavaScript)|
+|  | [JavaScript Data Type?](#ques-JavaScript-Data-Type?)|
+
 |1  | [What are the possible ways to create objects in JavaScript?](#what-are-the-possible-ways-to-create-objects-in-javascript) |
 |2  | [What is prototype chain?](#what-is-prototype-chain)|
 |3  | [What is the difference between Call, Apply and Bind?](#what-is-the-difference-between-call-apply-and-bind)|
@@ -5398,10 +5403,7 @@ function userDetails(username) {
 
 | No. | Questions |
 |---- | ---------
-|  | [What is JavaScript?](#ques-What-is-JavaScript) |
-|  | [What is an ECMAScript?](#ques-What-is-an-ECMAScript)|
-|  | [Difference between Java and JavaScript?](#ques-Difference-between-Java-and-JavaScript)|
-|  | [JavaScript Data Type?](#ques-JavaScript-Data-Type?)|
+
 
 
 
