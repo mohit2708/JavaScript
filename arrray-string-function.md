@@ -43,7 +43,7 @@ let arrayIntegers3 = arrayIntegersOriginal3.splice(3, 1, "a", "b", "c"); //retur
 
 ⬆ Back to Top
 ### Ques. What is the difference between slice & splice?
-Ans.
+__Ans.__
 
 slice()	splice()
 Does not modify the original array(immutable)	Modifies the original array(mutable)
@@ -52,7 +52,7 @@ Used to pick the element from array	Used to insert or delete elements to/from ar
 ⬆ Back to Top
 
 Ques. How do you combine two or more arrays?
-Ans. The concat() method is used to join two or more arrays by returning a new array containing all the elements.
+__Ans.__ The concat() method is used to join two or more arrays by returning a new array containing all the elements.
 
 Syntex:- array1.concat(array2, array3, ..., arrayX)
 
@@ -62,8 +62,8 @@ var veggiesAndFruits = veggies.concat(fruits);
 console.log(veggiesAndFruits); // Tomato, Carrot, Cabbage, Apple, Orange, Pears
 ⬆ Back to Top
 
-Ques. What is the Array filter() Method?
-Ans. The filter() method creates an array filled with all array elements that pass a test (provided as a function).
+### Ques. What is the Array filter() Method?
+__Ans.__ The filter() method creates an array filled with all array elements that pass a test (provided as a function).
 
 Note: filter() does not execute the function for array elements without values.
 
@@ -84,8 +84,8 @@ function myFunction() {
 </script>
 ⬆ Back to Top
 
-Ques. What is the Array push() Method?
-Ans. The push() method adds new items to the end of an array, and returns the new length.
+### Ques. What is the Array push() Method?
+__Ans.__ The push() method adds new items to the end of an array, and returns the new length.
 
 Syntex:- array.push(item1, item2, ..., itemX)
 
@@ -96,8 +96,8 @@ fruits.push("Kiwi","Mango");
 document.write(fruits);
 ⬆ Back to Top
 
-Ques. What is the Array pop() Method?
-Ans. The pop() method removes the last element of an array, and returns that element.
+### Ques. What is the Array pop() Method?
+__Ans.__ The pop() method removes the last element of an array, and returns that element.
 
 Syntex:- array.pop()
 
@@ -108,8 +108,8 @@ fruits.pop();
 document.write(fruits);
 ⬆ Back to Top
 
-Ques. What is the Array shift() Method?
-Ans. The shift() method removes the first item of an array.
+### Ques. What is the Array shift() Method?
+__Ans.__ The shift() method removes the first item of an array.
 
 Example:-
 
@@ -118,8 +118,8 @@ fruits.shift();
 document.write(fruits);	//Orange,Apple, Mango
 ⬆ Back to Top
 
-Ques. What is the Array unshift() Method?
-Ans. The unshift() method adds new items to the beginning of an array, and returns the new length.
+### Ques. What is the Array unshift() Method?
+__Ans.__ The unshift() method adds new items to the beginning of an array, and returns the new length.
 
 Example:-
 
@@ -128,8 +128,8 @@ fruits.unshift("Lemon", "Pineapple");
 document.write(fruits); 	//Lemon,Pineapple,Banana,Orange,Apple,Mango
 ⬆ Back to Top
 
-Ques. What is the Array sort() Method?
-Ans. The sort() method sorts the items of an array.
+### Ques. What is the Array sort() Method?
+__Ans.__ The sort() method sorts the items of an array.
 
 Example:-
 
@@ -139,7 +139,7 @@ document.write(fruits);
 ⬆ Back to Top
 
 Ques. What is the Array reverse() Method?
-Ans. The reverse() method reverses the order of the elements in an array.
+__Ans.__ The reverse() method reverses the order of the elements in an array.
 
 Example:-
 
@@ -148,8 +148,8 @@ fruits.reverse();
 document.write(fruits);
 ⬆ Back to Top
 
-Ques. What is the Array concat() Method?
-Ans. The concat() method is used to join two or more arrays.
+### Ques. What is the Array concat() Method?
+__Ans.__ The concat() method is used to join two or more arrays.
 
 Example:-
 
@@ -160,8 +160,8 @@ var children = hege.concat(stale,kai);
 document.write(children);
 ⬆ Back to Top
 
-Ques. What is the Array join() Method?
-Ans. The join() method returns the array as a string.
+### Ques. What is the Array join() Method?
+__Ans.__ The join() method returns the array as a string.
 
 Example:-
 
@@ -169,13 +169,13 @@ var fruits = ["Banana", "Orange", "Apple", "Mango"];
 document.write(fruits.join(" and "));
 ⬆ Back to Top
 
-Ques. What is the Array isArray() Method?
-Ans.
+### Ques. What is the Array isArray() Method?
+__Ans.__
 
 ⬆ Back to Top
 
-Ques. What is the Array indexOf() Method?
-Ans. The indexOf() method searches the array for the specified item, and returns its position.
+### Ques. What is the Array indexOf() Method?
+__Ans.__ The indexOf() method searches the array for the specified item, and returns its position.
 
 Example:-
 
@@ -183,16 +183,16 @@ var fruits = ["Banana", "Orange", "Apple", "Mango"];
 document.write(fruits.indexOf("Orange"));  	//1
 ⬆ Back to Top
 
-Ques. What is the Array lastIndexOf() Method?
-Ans. ⬆ Back to Top
+### Ques. What is the Array lastIndexOf() Method?
+__Ans.__ ⬆ Back to Top
 
-Ques. What is the Array entries() Method ?
-Ans. The entries() method returns an Array Iterator object with key/value pairs.
+### Ques. What is the Array entries() Method ?
+__Ans.__ The entries() method returns an Array Iterator object with key/value pairs.
 
 ⬆ Back to Top
 
-Ques. What is the Array every() Method?
-Ans. The every() method checks if all elements in an array pass a test (provided as a function).[every() function check karta hai ki sari valu 18 sa badi hai to hi true aayega otherwise fale.]
+### Ques. What is the Array every() Method?
+__Ans.__ The every() method checks if all elements in an array pass a test (provided as a function).[every() function check karta hai ki sari valu 18 sa badi hai to hi true aayega otherwise fale.]
 
 var ages = [32, 33, 58, 40];
 var b = ages.every(checkAdult);
@@ -207,21 +207,21 @@ console.log(array1.every(isBelowThreshold));
 // expected output: true
 ⬆ Back to Top
 
-Ques. What is the Array filter() Method?
-Ans.
+### Ques. What is the Array filter() Method?
+__Ans.__
 
 ⬆ Back to Top
 
-Ques. What is the Array find() Method?
-Ans. ⬆ Back to Top
+### Ques. What is the Array find() Method?
+__Ans.__ ⬆ Back to Top
 
-Ques. What is the Array findindex() Method?
-Ans.
+### Ques. What is the Array findindex() Method?
+__Ans.__
 
 ⬆ Back to Top
 
-Ques. What is the Array includes() Method?
-Ans. includes() method check the value in the array.
+### Ques. What is the Array includes() Method?
+__Ans.__ includes() method check the value in the array.
 
 The includes() method is case sensitive.
 
@@ -230,64 +230,64 @@ var n = fruits.includes("Mango");
 document.write(n); //True
 ⬆ Back to Top
 
-Ques. What is the Array some() Method?
-Ans.
+### Ques. What is the Array some() Method?
+__Ans.__
 
 ⬆ Back to Top
 
 Ques. What is the Array forEach() Method?
-Ans. ⬆ Back to Top
+__Ans.__ ⬆ Back to Top
 
-Ques. What is the Array toString() Method?
-Ans. The toString() method returns a string with all the array values, separated by commas.
+### Ques. What is the Array toString() Method?
+__Ans.__ The toString() method returns a string with all the array values, separated by commas.
 
 var arr = new Array("orange", "mango", "banana", "sugar");        
 var str = arr.toString();
 document.write("Returned string is : " + str );
 ⬆ Back to Top
 
-Ques. What is the Array valueOf() Method?
-Ans.
+### Ques. What is the Array valueOf() Method?
+__Ans.__
 
 ⬆ Back to Top
 
-Ques. What is the Array fill() Method?
-Ans.
+### Ques. What is the Array fill() Method?
+__Ans.__
 
 ⬆ Back to Top
 
-Ques. Find the length of the array?
-Ans.
+### Ques. Find the length of the array?
+__Ans.__
 
 var fruits = ["Banana", "Orange", "Apple", "Mango"];
 fruits.length;   // the length of fruits is 4
 ⬆ Back to Top
 
-Ques. Accessing the first Element of the Array?
-Ans.
+### Ques. Accessing the first Element of the Array?
+__Ans.__
 
 var fruits = ["Banana", "Orange", "Apple", "Mango"];
 var first = fruits[0];
 document.getElementById("demo").innerHTML = first;
 ⬆ Back to Top
 
-Ques. Accessing the last Element of the Array?
-Ans.
+### Ques. Accessing the last Element of the Array?
+__Ans.__
 
 fruits = ["Banana", "Orange", "Apple", "Mango"];
 var last = fruits[fruits.length - 1]; //Mango
 ⬆ Back to Top
 
-Ques. Changing an Array Element?
-Ans.
+### Ques. Changing an Array Element?
+__Ans.__
 
 var cars = ["Saab", "Volvo", "BMW"];
 cars[0] = "Opel";
 document.getElementById("demo").innerHTML = cars[0]; //Opel,Volvo,BMW
 ⬆ Back to Top
 
-Ques. JavaScript String Length function?
-Ans. The length property returns the length of a string.
+### Ques. JavaScript String Length function?
+__Ans.__ The length property returns the length of a string.
 
 var txt = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 len = txt.length;
