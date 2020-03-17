@@ -5395,59 +5395,14 @@ function userDetails(username) {
 
      **[⬆ Back to Top](#table-of-contents)**
 
-393. ### ?
 
-     **[⬆ Back to Top](#table-of-contents)**
-
-394. ### ?
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-395. ### ?
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-396. ### ?
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-397. ### ?
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-398. ### ?
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-399. ### ?
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-400. ### ?
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-401. ### ?
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-402. ### ?
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-403. ### ?
-
-     **[⬆ Back to Top](#table-of-contents)**
-
-404. ### ?
-
-     **[⬆ Back to Top](#table-of-contents)**
+| No. | Questions |
+|---- | ---------
+|  | [What is JavaScript?](#ques-What-is-JavaScript) |
 
 
 
 
-Table of Contents
-No.	Questions
 1	What is JavaScript?
 1	What is an ECMAScript?
 2	Difference between Java and JavaScript?
@@ -5494,23 +5449,22 @@ What is the Array forEach() Method?
 What is the Array toString() Method?
 What is the Array valueOf() Method?
 What is the Array fill() Method?
-Ques. What is JavaScript?
-Ans.
 
-JavaScript is a Client-side as well as server side scripting language that can be inserted into HTML pages. JavaScript is also an object based Programming language.
-JavaScript is the programming language of HTML and the Web.
-JavaScript was created by Brendan Eich in September 1995.
-JavaScript is a case sensitive language.
-Netscape is the software company who developed JavaScript.
-⬆ Back to Top
+### Ques. What is JavaScript?
+__Ans.__
+* JavaScript is a Client-side as well as server side scripting language that can be inserted into HTML pages. JavaScript is also an object based Programming language.
+* JavaScript is the programming language of HTML and the Web.
+* JavaScript was created by Brendan Eich in September 1995.
+* JavaScript is a case sensitive language.
+* Netscape is the software company who developed JavaScript.
 
-Ques. What is an ECMAScript?
-Ans. ECMAScript (European Computer Manufacturers Association) Script is a specification for the scripting language standards. It has standardized Javascript which made Javascript the best implementation of ECMAScript.
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is an ECMAScript?
+__Ans.__ ECMAScript (European Computer Manufacturers Association) Script is a specification for the scripting language standards. It has standardized Javascript which made Javascript the best implementation of ECMAScript.
 
-⬆ Back to Top
-
-Ques. Difference between Java and JavaScript?
-Ans.
+**[⬆ Back to Top](#table-of-contents)**
+###Ques. Difference between Java and JavaScript?
+__Ans.__
 
 Java	JavaScript
 Java is an OOP Programming Language.	javaScript is an OOP scripting language.
