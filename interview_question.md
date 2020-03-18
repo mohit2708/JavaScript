@@ -8,6 +8,7 @@
 |  | [What is an ECMAScript?](#ques-What-is-an-ECMAScript)|
 |  | [Difference between Java and JavaScript?](#ques-Difference-between-Java-and-JavaScript)|
 |  | [JavaScript Data Type?](#ques-JavaScript-Data-Type)|
+|  |[What is the javaScript Variable?](#ques-What-is-the-javaScript-Variable)|
 
 ### Ques. What is JavaScript?
 __Ans.__
