@@ -134,3 +134,26 @@ __2. Non Persistent Cookie:-__ Non persistent cookies are stored in ram on the s
 * Cookies are used to remember information about the user profile(such as username). It basically involves two steps,
 * When a user visits a web page, user profile can be stored in a cookie.
 * Next time the user visits the page, the cookie remembers user profile.
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is Local Storage in JavaScript?
+* The local storage is a read only Property of window object.
+* It stores the data in a web browser specifically to the domain and protocol.
+* It does not get sent to the server as it is stored locally in the web browser with no expiration date.
+* The data will not be deleted when the browser is closed and reopened and will be available the next day, week or year.
+Methods
+
+__1. setItem(key, value):-__ It allows to add a key/value pair to the storage obj. if the key already exists, the name value will overwrite the old value.<br>
+__2. getItem(Key):-__ It returns the value of the item that is set with the given key.<br>
+__3. key(n):-__ It returns the key of the item in the storage obj at the nth index which can be useful for looping.<br>
+__4. removeItem(key):-__ It removes the item in the storage object with the given key.
+```javascript
+window.localStorage.setItem("user","mohit");
+window.localStorage.setItem("email","mksaxena27@gmail.com");
+console.log(localStorage);
+console.log(localStorage.length)		//2
+console.log(localStorage.getItem('email'))	//mksaxena27@gmail.com
+console.log(localStorage.key(0))		//email
+localStorage.removeItem('email')		//email delete ho gaya
+localStorage.clear()				// all localstorage clear
+```
