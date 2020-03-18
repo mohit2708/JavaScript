@@ -11,6 +11,9 @@
 |  |[What is the javaScript Variable?](#ques-What-is-the-javaScript-Variable)|
 |  |[What is Operate in javascript?](#ques-What-is-Operate-in-javascript)|
 |  |[What is the javaScript Comment?](#ques-What-is-the-javaScript-Comment)|
+|  |[What is the difference between the operators '==' and '==='?]()|
+|  |[]()|
+|  |[]()|
 |  |[]()|
 
 
