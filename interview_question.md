@@ -111,3 +111,26 @@ __Comparison Operators:-__
 ### Ques. What is the javaScript Comment?<br>
 __Single Line Comment:-__ Single line comment start with //<br>
 __Multi-Line Comments:-__ Multi-Line comment start with /* and end with */
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is the difference between the operators '==' and '==='?
+__Ans.__ The operator '==' compares the value; whereas, the operator '===' compares both value and type.
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is cookies?
+__Ans.__ Php cookie is a small piece of information, which is stored on the client browser. Cookies are saved as key/value pairs.<br>
+__Syntex:-__ document.cookie = "key1 = value1; key2 = value2; expires = date";
+```javascript
+document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
+```
+__Delete Cookie:-__ To delete a cookie, you just need to set the value of the cookie to empty and set the value of expires to a passed date.
+
+#### Two Types Of Cookie:-
+
+__1. Persistent Cookie:-__ A persistent cookie is a cookie which is store information for certain time in a browser. By default cookie are temporary and are erased if we close the browser.<br>
+__2. Non Persistent Cookie:-__ Non persistent cookies are stored in ram on the server. Ex:- login
+
+#### Why do you need a Cookie?
+* Cookies are used to remember information about the user profile(such as username). It basically involves two steps,
+* When a user visits a web page, user profile can be stored in a cookie.
+* Next time the user visits the page, the cookie remembers user profile.
