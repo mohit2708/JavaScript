@@ -382,29 +382,7 @@
 |375| [What is the easiest multi condition checking?](#what-is-the-easiest-multi-condition-checking)|
 |376| [How do you capture browser back button?](#how-do-you-capture-browser-back-button)|
 |377| [How do you disable right click in the web page?](#how-do-you-disable-right-click-in-the-web-page)|
-|378| [](#)|
-|379| [](#)|
-|380| [](#)|
-|381| [](#)|
-|382| [](#)|
-|383| [](#)|
-|384| [](#)|
-|385| [](#)|
-|386| [](#)|
-|387| [](#)|
-|388| [](#)|
-|389| [](#)|
-|390| [](#)|
-|391| [](#)|
-|392| [](#)|
-|393| [](#)|
-|394| [](#)|
-|395| [](#)|
-|396| [](#)|
-|397| [](#)|
-|398| [](#)|
-|399| [](#)|
-|400| [](#)|
+
 
 1. ### What are the possible ways to create objects in JavaScript?
 
@@ -5380,10 +5358,8 @@ function userDetails(username) {
 
 
 
-5	What is the javaScript Variable?
+
 difference between var and Let?
-What is Operate in javascript?
-What is the javaScript Comment?
 What is the difference between the operators '==' and '==='?
 What is cookies?
 What is Local Storage?
@@ -5477,14 +5453,7 @@ The first character must not be a digit.
 
 ⬆ Back to Top
 
-### Ques. What is Operate in javascript?
-__Ans.__
 
-__Arithmetic Operators:-__ Addition(+), Subtraction(-), Multiplication(*), Exponentiation (ES2016)(**), Division(/), Modulus(Division Remainder)(%), Increment(++), Decrement(--).
-
-__Assignment Operators:-__
-
-__Comparison Operators:-__
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is the use of a Map object in JavaScript?
@@ -5555,66 +5524,7 @@ set.clear() – removes everything from the set.
 set.size – is the elements count.
 ⬆ Back to Top
 
-Ques. What is the javaScript Comment?
-Ans. Single Line Comment:- Single line comment start with //
 
-Multi-Line Comments:- Multi-Line comment start with /* and end with */
-
-⬆ Back to Top
-
-Ques. What is the difference between the operators '==' and '==='?
-Ans. The operator '==' compares the value; whereas, the operator '===' compares both value and type.
-
-⬆ Back to Top
-
-Ques. What is cookies?
-Ans. Php cookie is a small piece of information, which is stored on the client browser. Cookies are saved as key/value pairs.
-
-Syntex:- document.cookie = "key1 = value1; key2 = value2; expires = date";
-
-Example:-
-
-document.cookie = "username=John Doe; expires=Thu, 18 Dec 2013 12:00:00 UTC; path=/";
-Delete Cookie:- To delete a cookie, you just need to set the value of the cookie to empty and set the value of expires to a passed date.
-
-Two Types Of Cookie:-
-
-1. Persistent Cookie:- A persistent cookie is a cookie which is store information for certain time in a browser. By default cookie are temporary and are erased if we close the browser.
-
-2. Non Persistent Cookie:- Non persistent cookies are stored in ram on the server. Ex:- login
-
-Why do you need a Cookie?
-Cookies are used to remember information about the user profile(such as username). It basically involves two steps,
-When a user visits a web page, user profile can be stored in a cookie.
-Next time the user visits the page, the cookie remembers user profile.
-⬆ Back to Top
-
-Ques. What is Local Storage in JavaScript?
-Ans.
-
-The local storage is a read only Property of window object.
-It stores the data in a web browser specifically to the domain and protocol.
-It does not get sent to the server as it is stored locally in the web browser with no expiration date.
-The data will not be deleted when the browser is closed and reopened and will be available the next day, week or year.
-Methods
-
-1. setItem(key, value):- It allows to add a key/value pair to the storage obj. if the key already exists, the name value will overwrite the old value.
-
-2. getItem(Key):- It returns the value of the item that is set with the given key.
-
-3. key(n):- It returns the key of the item in the storage obj at the nth index which can be useful for looping.
-
-4. removeItem(key):- It removes the item in the storage object with the given key.
-
-window.localStorage.setItem("user","mohit");
-window.localStorage.setItem("email","mksaxena27@gmail.com");
-console.log(localStorage);
-console.log(localStorage.length)		//2
-console.log(localStorage.getItem('email'))	//mksaxena27@gmail.com
-console.log(localStorage.key(0))		//email
-localStorage.removeItem('email')		//email delete ho gaya
-localStorage.clear()				// all localstorage clear
-⬆ Back to Top
 
 Ques. What is Session Storage in JavaScript?
 Ans.
