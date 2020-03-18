@@ -109,5 +109,5 @@ __Comparison Operators:-__
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is the javaScript Comment?<br>
-__Single Line Comment:-__ Single line comment start with //
+__Single Line Comment:-__ Single line comment start with //<br>
 __Multi-Line Comments:-__ Multi-Line comment start with /* and end with */
