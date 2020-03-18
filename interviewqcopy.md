@@ -5526,27 +5526,7 @@ set.size – is the elements count.
 
 
 
-Ques. What is Session Storage in JavaScript?
-Ans.
 
-The session storage read only property of window object.
-It store data in web browser specifically to the domain and protocol for a particular session.
-It does not get sent to the server.
-Data stored in session storage gets cleared when the page session ends.
-A page session lasts for as long as the browser is open and survives over page reload and restore.
-Q27. What is the difference between Local storage & Session storage?
-
-Local Storage – The data is not sent back to the server for every HTTP request (HTML, images, JavaScript, CSS, etc) – reducing the amount of traffic between client and server. It will stay until it is manually cleared through settings or program.
-Session Storage – It is similar to local storage; the only difference is while data stored in local storage has no expiration time, data stored in session storage gets cleared when the page session ends. Session Storage will leave when the browser is closed.
-
-What is the main difference between localStorage and sessionStorage?
-LocalStorage is same as SessionStorage but it persists the data even when the browser is closed and reopened(i.e it has no expiration time) whereas in sessionStorage data gets cleared when the page session ends.
-⬆ Back to Top
-
-Ques. What is the difference between Local Storage and Session Storage?
-Ans. Local Storage will stay until it is manually cleared through settings or program.
-
-Session Storage will leave when the browser is closed.
 
 ⬆ Back to Top
 
