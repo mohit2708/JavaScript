@@ -9,6 +9,10 @@
 |  | [Difference between Java and JavaScript?](#ques-Difference-between-Java-and-JavaScript)|
 |  | [JavaScript Data Type?](#ques-JavaScript-Data-Type)|
 |  |[What is the javaScript Variable?](#ques-What-is-the-javaScript-Variable)|
+|  |[What is Operate in javascript?](#ques-What-is-Operate-in-javascript)|
+|  |[What is the javaScript Comment?](#ques-What-is-the-javaScript-Comment)|
+|  |[]()|
+
 
 ### Ques. What is JavaScript?
 __Ans.__
@@ -94,3 +98,16 @@ __Ans.__
 * javaScript includes variables which hold the data value and it can be changed anytime.
 * To create a variable in JavaScript, use the let keyword.
 * Variables named apple and AppLE are two different variables.
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is Operate in javascript?<br>
+__Arithmetic Operators:-__ Addition(+), Subtraction(-), Multiplication(*), Exponentiation (ES2016)(**), Division(/), Modulus(Division Remainder)(%), Increment(++), Decrement(--).
+
+__Assignment Operators:-__
+
+__Comparison Operators:-__
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is the javaScript Comment?<br>
+__Single Line Comment:-__ Single line comment start with //
+__Multi-Line Comments:-__ Multi-Line comment start with /* and end with */
