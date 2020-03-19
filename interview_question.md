@@ -11,10 +11,13 @@
 |  |[What is the javaScript Variable?](#ques-What-is-the-javaScript-Variable)|
 |  |[What is Operate in javascript?](#ques-What-is-Operate-in-javascript)|
 |  |[What is the javaScript Comment?](#ques-What-is-the-javaScript-Comment)|
-|  |[What is the difference between the operators '==' and '==='?]()|
+|  |[What is the difference between the operators '==' and '==='?](#ques-What-is-the-difference-between-the-operators-'=='-and-'===')|
+|  |[What is cookies?](#ques-What-is-cookies)|
+|  |[What is Local Storage in JavaScript?](#ques-What-is-Local-Storage-in-JavaScript)|
+|  |[What is Session Storage in JavaScript?](#ques-What-is-Session-Storage-in-JavaScript)|
+|  |[What is the difference between Local storage & Session storage](#ques-What-is-the-difference-between-Local-storage-&-Session-storage)|
 |  |[]()|
-|  |[]()|
-|  |[]()|
+
 
 
 ### Ques. What is JavaScript?
