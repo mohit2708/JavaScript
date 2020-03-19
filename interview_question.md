@@ -173,7 +173,7 @@ localStorage.clear()				// all localstorage clear
 * A page session lasts for as long as the browser is open and survives over page reload and restore.
 
 **[⬆ Back to Top](#table-of-contents)**
-### Q27. What is the difference between Local storage & Session storage?
+### Ques. What is the difference between Local storage & Session storage?
 __Local Storage:–__ The data is not sent back to the server for every HTTP request (HTML, images, JavaScript, CSS, etc) – reducing the amount of traffic between client and server. It will stay until it is manually cleared through settings or program.<br>
 __Session Storage:–__ It is similar to local storage; the only difference is while data stored in local storage has no expiration time, data stored in session storage gets cleared when the page session ends. Session Storage will leave when the browser is closed.<br>
 
