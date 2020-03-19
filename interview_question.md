@@ -187,12 +187,11 @@ Session Storage will leave when the browser is closed.
 * Proxy is an object in javascript which wraps an object or a function and monitors it via something called target.
 * Proxy is a wrapper around an object, that forwards operations on it to the object, optionally trapping some of them.
 * It can wrap any kind of object, including classes and functions.<br>
+* The Proxy object is used to define custom behavior for fundamental operations such as property lookup, assignment, enumeration, function invocation, etc. The syntax would be as follows.
 __Syntex:-__
 ```javascript
 let proxy = new Proxy(target, handler)
 ```
-#### What is a proxy object?
-The Proxy object is used to define custom behavior for fundamental operations such as property lookup, assignment, enumeration, function invocation, etc. The syntax would be as follows,
 ```javascript
 var p = new Proxy(target, handler);
 Let's take an example of proxy object,
