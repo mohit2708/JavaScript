@@ -7762,34 +7762,5 @@ Check out these best JavaScript tutorials to enhance your JS skill and knowledge
 
 ================================================================================================================================
 
-### Ques. What is Proxy object?
-* A Proxy object wraps another object and intercepts operations.
-* Proxy is an object in javascript which wraps an object or a function and monitors it via something called target.
-* Proxy is a wrapper around an object, that forwards operations on it to the object, optionally trapping some of them.
-* It can wrap any kind of object, including classes and functions.<br>
-__Syntex:-__
-```javascript
-let proxy = new Proxy(target, handler)
-```
-#### What is a proxy object?
-The Proxy object is used to define custom behavior for fundamental operations such as property lookup, assignment, enumeration, function invocation, etc. The syntax would be as follows,
-```javascript
-var p = new Proxy(target, handler);
-Let's take an example of proxy object,
-var handler = {
-    get: function(obj, prop) {
-        return prop in obj ?
-            obj[prop] :
-            100;
-    }
-};
 
-var p = new Proxy({}, handler);
-p.a = 10;
-p.b = null;
-
-console.log(p.a, p.b); // 1, null
-console.log('c' in p, p.c); // false, 100
-In the above code, it uses get handler which define the behavior of the proxy when an operation is performed on it
-```
 
