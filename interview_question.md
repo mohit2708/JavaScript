@@ -6,6 +6,7 @@
 |---- | ---------|
 |  | [What is JavaScript?](#ques-What-is-JavaScript)|
 |  | [What is an ECMAScript?](#ques-What-is-an-ECMAScript)|
+|  |[Name some of the Javascript frameworks?](#Name-some-of-the-Javascript-frameworks)
 |  | [Difference between Java and JavaScript?](#ques-Difference-between-Java-and-JavaScript)|
 |  | [JavaScript Data Type?](#ques-JavaScript-Data-Type)|
 |  |[What is the javaScript Variable?](#ques-What-is-the-javaScript-Variable)|
@@ -24,7 +25,7 @@
 |  |[What are lambda or arrow functions?](#ques-What-are-lambda-or-arrow-functions)|
 |  |[What is currying function?](#ques-What-is-currying-function)|
 |  |[What is the difference between write and writeln?](#ques-What-is-the-difference-between-write-and-writeln)|
-|  |[]()|
+|  |[Name the different types of pop up boxes in Javascript?](#Ques-Name-the-different-types-of-pop-up-boxes-in-Javascript)|
 |  |[]()|
 |  |[]()|
 |  |[]()|
@@ -42,6 +43,10 @@ __Ans.__
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is an ECMAScript?
 __Ans.__ ECMAScript (European Computer Manufacturers Association) Script is a specification for the scripting language standards. It has standardized Javascript which made Javascript the best implementation of ECMAScript.
+
+**[⬆ Back to Top](#table-of-contents)**
+### Name some of the Javascript frameworks?
+(i) Angular (ii) React (iii) Vue
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. Difference between Java and JavaScript?
@@ -446,3 +451,15 @@ document.writeln("Have a nice day!");
 Output:- //Hello World!
 	//Have a nice day!
  ```
+ 
+ **[⬆ Back to Top](#table-of-contents)**
+### Ques. What is the use of isNaN Function?
+* isNan function returns true if the argument is not a number otherwise it is false.
+* NaN is a short form of Not a Number.
+
+ **[⬆ Back to Top](#table-of-contents)**
+### Ques. Name the different types of pop up boxes in Javascript?
+There are three types of pop up boxes in Javascript<br>
+(i) alert() provides some information to the user with just an OK button<br>
+(ii) confirm() asks a question to the user with two options Ok and cancel, and<br>
+(iii) prompt() takes an input from the user.
