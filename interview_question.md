@@ -205,6 +205,7 @@ __1. setItem(key, value):-__ It allows to add a key/value pair to the storage ob
 __2. getItem(Key):-__ It returns the value of the item that is set with the given key.<br>
 __3. key(n):-__ It returns the key of the item in the storage obj at the nth index which can be useful for looping.<br>
 __4. removeItem(key):-__ It removes the item in the storage object with the given key.
+__5. sessionStorage.clear(); :-__ Remove all saved data from sessionStorage
 ```javascript
 window.localStorage.setItem("user","mohit");
 window.localStorage.setItem("email","mksaxena27@gmail.com");
