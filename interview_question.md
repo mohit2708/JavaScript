@@ -26,6 +26,7 @@
 |  |[What is currying function?](#ques-What-is-currying-function)|
 |  |[What is Generator function?](#ques-What-is-Generator-function)|
 |  |[What is a callback function?](#ques-What-is-a-callback-function)|
+|  |[What is callback in callback?](#ques-What-is-callback-in-callback)|
 |  |[What is the difference between write and writeln?](#ques-What-is-the-difference-between-write-and-writeln)|
 |  |[Name the different types of pop up boxes in Javascript?](#Ques-Name-the-different-types-of-pop-up-boxes-in-Javascript)|
 |  |[]()|
@@ -464,6 +465,27 @@ function outerFunction(callback) {
 }
 
 outerFunction(callbackFunction);
+```
+**[⬆ Back to Top](#table-of-contents)**
+### What is callback in callback?
+You can nest one callback inside in another callback to execute the actions sequentially one by one. This is known as callbacks in callbacks.
+```javascript
+loadScript('/script1.js', function(script) {
+   console.log('first script is loaded');
+
+  loadScript('/script2.js', function(script) {
+
+    console.log('second script is loaded');
+
+    loadScript('/script3.js', function(script) {
+
+        console.log('third script is loaded');
+      // after all scripts are loaded
+    });
+
+  })
+
+});
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
