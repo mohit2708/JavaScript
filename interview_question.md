@@ -368,6 +368,14 @@ Deleting object:- var person = { name: "Peter", age: 28, gender: "Male", display
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What are lambda or arrow functions?
 * An arrow function is a shorter syntex for a function.
+```javasacript
+hello = () => {
+  return "Hello World!";
+}
+
+let sum = (a, b) => a + b;
+alert( sum(1, 2) ); // 3
+```
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is currying function?
