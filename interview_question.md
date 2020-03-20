@@ -21,6 +21,7 @@
 |  |[What is Proxy object?](#ques-What-is-Proxy-object)|
 |  |[What is JavaScript Object?](#ques-What-is-JavaScript-Object)|
 |  |[What are the possible ways to create objects in javascript?](#ques-What-are-the-possible-ways-to-create-objects-in-javascript)|
+|  |[What are the different error names from error object?](#ques-What-are-the-different-error-names-from-error-object)|
 |  |[What is JavaScript Function](#ques-What-is-JavaScript-Function)|
 |  |[What are lambda or arrow functions?](#ques-What-are-lambda-or-arrow-functions)|
 |  |[What is currying function?](#ques-What-is-currying-function)|
@@ -366,6 +367,19 @@ Accessing object:- var book = { "name": "Harry Potter and the Goblet of Fire", "
 Setting object:- var person = { name: "Peter", age: 28, gender: "Male" }; // Setting a new property person.country = "United States"; document.write(person.country); // Prints: United States
 
 Deleting object:- var person = { name: "Peter", age: 28, gender: "Male", displayName: function() { alert(this.name); } }; // Deleting property delete person.age; alert(person.age); // Outputs: undefined
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What are the different error names from error object?
+There are 6 different types of error names returned from error object,
+| Error Name | Description |
+|---- | ---------
+| EvalError  | An error has occurred in the eval() function |
+| RangeError | An error has occurred with a number "out of range"  |
+| ReferenceError | An error due to an illegal reference|
+| SyntaxError | An error due to a syntax error|
+| TypeError | An error due to a type error |
+| URIError | An error due to encodeURI() |
+
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is JavaScript Function?
