@@ -35,7 +35,6 @@
 |34 | [What is IndexedDB?](#what-is-indexeddb)|
 |35 | [What is web storage?](#what-is-web-storage)|
 |36 | [What is a post message?](#what-is-a-post-message)|
-|37 | [What is a cookie?](#what-is-a-cookie)|
 |38 | [Why do you need a Cookie?](#why-do-you-need-a-cookie)|
 |39 | [What are the options in a cookie?](#what-are-the-options-in-a-cookie)|
 |41 | [What are the differences between cookie, local storage and session storage?](#What-are-the-differences-between-cookie,-local-storage-and-session-storage)|
@@ -49,7 +48,6 @@
 |51 | [What is a promise?](#what-is-a-promise)|
 |52 | [Why do you need a promise?](#why-do-you-need-a-promise)|
 |53 | [What are the three states of promise?](#what-are-the-three-states-of-promise)|
-|54 | [What is a callback function?](#what-is-a-callback-function)|
 |55 | [Why do we need callbacks?](#why-do-we-need-callbacks)|
 |56 | [What is a callback hell?](#what-is-a-callback-hell)|
 |57 | [What is server-sent events?](#what-is-server-sent-events)|
@@ -57,7 +55,6 @@
 |59 | [How do you check browser support for server-sent events?](#how-do-you-check-browser-support-for-server-sent-events)|
 |60 | [What are the events available for server sent events?](#what-are-the-events-available-for-server-sent-events)|
 |61 | [What are the main rules of promise?](#what-are-the-main-rules-of-promise)|
-|62 | [What is callback in callback?](#what-is-callback-in-callback)|
 |63 | [What is promise chaining?](#what-is-promise-chaining)|
 |64 | [What is promise.all](#what-is-promise.all)|
 |65 | [What is the purpose of race method in promise?](#what-is-the-purpose-of-race-method-in-promise)|
@@ -955,21 +952,7 @@ Remember that Pure functions are important as they simplify unit testing without
 
     **[⬆ Back to Top](#table-of-contents)**
 
-54. ### What is a callback function?
-    A callback function is a function passed into another function as an argument. This function is invoked inside the outer function to complete an action.
-    Let's take a simple example of how to use callback function
-    ```javascript
-    function callbackFunction(name) {
-      console.log('Hello ' + name);
-    }
 
-    function outerFunction(callback) {
-      let name = prompt('Please enter your name.');
-      callback(name);
-    }
-
-    outerFunction(callbackFunction);
-    ```
     **[⬆ Back to Top](#table-of-contents)**
 
 55. ### Why do we need callbacks?
@@ -1061,26 +1044,7 @@ Remember that Pure functions are important as they simplify unit testing without
 
     **[⬆ Back to Top](#table-of-contents)**
 
-62. ### What is callback in callback?
-    You can nest one callback inside in another callback to execute the actions sequentially one by one. This is known as callbacks in callbacks.
-    ```javascript
-    loadScript('/script1.js', function(script) {
-       console.log('first script is loaded');
 
-      loadScript('/script2.js', function(script) {
-
-        console.log('second script is loaded');
-
-        loadScript('/script3.js', function(script) {
-
-            console.log('third script is loaded');
-          // after all scripts are loaded
-        });
-
-      })
-
-    });
-    ```
 
     **[⬆ Back to Top](#table-of-contents)**
 
