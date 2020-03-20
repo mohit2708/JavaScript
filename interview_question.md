@@ -451,7 +451,8 @@ console.log(gen.next().value); // 2
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is a callback function?
-callback function is a function passed into another function as an argument.
+* callback function is a function passed into another function as an argument.
+* This function is invoked inside the outer function to complete an action.
 ```javascript
 function callbackFunction(name) {
   console.log('Hello ' + name);
