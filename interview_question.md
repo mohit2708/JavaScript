@@ -24,6 +24,7 @@
 |  |[What is JavaScript Function](#ques-What-is-JavaScript-Function)|
 |  |[What are lambda or arrow functions?](#ques-What-are-lambda-or-arrow-functions)|
 |  |[What is currying function?](#ques-What-is-currying-function)|
+|  |[What is Generator function?](#ques-What-is-Generator-function)|
 |  |[What is the difference between write and writeln?](#ques-What-is-the-difference-between-write-and-writeln)|
 |  |[Name the different types of pop up boxes in Javascript?](#Ques-Name-the-different-types-of-pop-up-boxes-in-Javascript)|
 |  |[]()|
@@ -426,18 +427,17 @@ curryUnaryFunction (1); // returns a function: b => c =>  1 + b + c
 curryUnaryFunction (1) (2); // returns a function: c => 3 + c
 curryUnaryFunction (1) (2) (3); // returns the number 6
 Curried functions are great to improve code re-usability and functional composition.
-⬆ Back to Top
-
-Ques. What is Generator function?
-Ans.
-
-Generators are a special class of functions that simplify the task of writing iterators.
-A generator is a function that produces a sequence of results instead of a single value, i.e you generate ​a series of values.
-Regular functions return only one, single value (or nothing).
-Generators can return (“yield”) multiple values, one after another, on-demand.
-
-Generators are created by generator functions function* f(…) {…}.
 ```
+
+ **[⬆ Back to Top](#table-of-contents)**
+### Ques. What is Generator function?
+* Generators are a special class of functions that simplify the task of writing iterators.
+* A generator is a function that produces a sequence of results instead of a single value, i.e you generate ​a series of values.
+* Regular functions return only one, single value (or nothing).
+* Generators can return (“yield”) multiple values, one after another, on-demand.
+* Generators are created by generator functions function* f(…) {…}.
+
+
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is the difference between write and writeln?
 write and writeln are the same function. The only difference is that writeln adds a new line at the end of the text. writeln adds a \n character to the end of the string
