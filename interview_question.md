@@ -21,6 +21,11 @@
 |  |[What is JavaScript Object?](#ques-What-is-JavaScript-Object)|
 |  |[What are the possible ways to create objects in javascript?](#ques-What-are-the-possible-ways-to-create-objects-in-javascript)|
 |  |[What is JavaScript Function](#ques-What-is-JavaScript-Function)|
+|  |[What are lambda or arrow functions?](#ques-What-are-lambda-or-arrow-functions)|
+|  |[What is currying function?](#ques-What-is-currying-function)|
+|  |[What is the difference between write and writeln?](#ques-What-is-the-difference-between-write-and-writeln)|
+|  |[]()|
+|  |[]()|
 |  |[]()|
 |  |[]()|
 
@@ -355,9 +360,81 @@ Setting object:- var person = { name: "Peter", age: 28, gender: "Male" }; // Set
 Deleting object:- var person = { name: "Peter", age: 28, gender: "Male", displayName: function() { alert(this.name); } }; // Deleting property delete person.age; alert(person.age); // Outputs: undefined
 
 **[⬆ Back to Top](#table-of-contents)**
-### What is JavaScript Function?
+### Ques. What is JavaScript Function?
 * A JavaScript function is a block of code designed to perform a particular task.
 * You can reuse code: Define the code once, and use it many times.
 * You can use the same code many times with different arguments, to produce different results.
 
 **[⬆ Back to Top](#table-of-contents)**
+### Ques. What are lambda or arrow functions?
+* An arrow function is a shorter syntex for a function.
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is currying function?
+* Currying is a technique of evaluating function with multiple arguments, into sequence of function with single argument.
+* Currying is a transformation of functions that translates a function from callable as f(a, b, c) into callable as f(a)(b)(c).
+* Currying is an advanced technique of working with functions. It’s used not only in JavaScript, but in other languages as well.
+* Currying helps you to avoid passing the same variable again and again.
+* Currying is the process of taking a function with multiple arguments and turning it into a sequence of functions each with only a single argument. Currying is named after a mathematician Haskell Curry. By applying currying, a n-ary function turns it into a unary function. 
+Syntex:-
+```javascript
+function* name([param[, param[, ... param]]]) {
+   statements
+}
+```
+Example:-
+```javascript
+function curry(f) { // curry(f) does the currying transform
+  return function(a) {
+    return function(b) {
+      return f(a, b);
+    };
+  };
+}
+
+// usage
+function sum(a, b) {
+  return a + b;
+}
+
+let curriedSum = curry(sum);
+
+alert( curriedSum(1)(2) ); // 3
+
+
+A partial invocation of a Javascript function is called Currying. Few arguments of a function are processed and a function is returned. Few more arguments are added by the returning function.
+
+
+What is currying function?
+Let's take an example of n-ary function and how it turns into a currying function
+const multiArgFunction = (a, b, c) => a + b + c;
+const curryUnaryFunction = a => b => c => a + b + c;
+curryUnaryFunction (1); // returns a function: b => c =>  1 + b + c
+curryUnaryFunction (1) (2); // returns a function: c => 3 + c
+curryUnaryFunction (1) (2) (3); // returns the number 6
+Curried functions are great to improve code re-usability and functional composition.
+⬆ Back to Top
+
+Ques. What is Generator function?
+Ans.
+
+Generators are a special class of functions that simplify the task of writing iterators.
+A generator is a function that produces a sequence of results instead of a single value, i.e you generate ​a series of values.
+Regular functions return only one, single value (or nothing).
+Generators can return (“yield”) multiple values, one after another, on-demand.
+
+Generators are created by generator functions function* f(…) {…}.
+```
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is the difference between write and writeln?
+write and writeln are the same function. The only difference is that writeln adds a new line at the end of the text. writeln adds a \n character to the end of the string
+```javascript
+document.write("Hello World!");
+document.write("Have a nice day!"); 
+output:- //Hello World!Have a nice day!
+
+document.writeln("Hello World!");
+document.writeln("Have a nice day!"); 
+Output:- //Hello World!
+	//Have a nice day!
+ ```
