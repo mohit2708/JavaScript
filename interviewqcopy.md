@@ -4,7 +4,6 @@
 
 | No. | Questions |
 |---- | ---------|
-|1  | [What are the possible ways to create objects in JavaScript?](#what-are-the-possible-ways-to-create-objects-in-javascript) |
 |2  | [What is prototype chain?](#what-is-prototype-chain)|
 |3  | [What is the difference between Call, Apply and Bind?](#what-is-the-difference-between-call-apply-and-bind)|
 |4  | [What is JSON and its common operations](#what-is-json-and-its-common-operations)|
@@ -12,7 +11,6 @@
 |6  | [What is the purpose of array splice method?](#what-is-the-purpose-of-array-splice-method)|
 |7  | [What is the difference between slice and splice?](#what-is-the-difference-between-slice-and-splice)|
 |8  | [How do you compare Object and Map?](#how-do-you-compare-object-and-map)|
-|9  | [What is the difference between == and === operators?](#what-is-the-difference-between-==-and-===-operators)|
 |10 | [What are lambda or arrow functions?](#what-are-lambda-or-arrow-functions)|
 |11 | [What is a first class function?](#what-is-a-first-class-function)|
 |12 | [What is a first order function?](#what-is-a-first-order-function)|
@@ -20,9 +18,6 @@
 |14 | [What is a unary function?](#what-is-a-unary-function)|
 |15 | [What is currying function?](#what-is-currying-function)|
 |16 | [What is a pure function?](#what-is-a-pure-function)|
-|17 | [What is the purpose of let keyword?](#what-is-the-purpose-of-let-keyword)|
-|18 | [What is the difference between let and var?](#what-is-the-difference-between-let-and-var)|
-|19 | [What is the reason to choose the name let as keyword?](#what-is-the-reason-to-choose-the-name-let-as-keyword)|
 |20 | [How do you redeclare variables in switch block without an error?](#how-do-you-redeclare-variables-in-switch-block-without-an-error)|
 |21 | [What is Temporal Dead Zone?](#what-is-temporal-dead-zone)|
 |22 | [What is IIFE(Immediately Invoked Function Expression)?](#what-is-iife-(-immediately-invoked-function-expression-)-)|
@@ -384,91 +379,7 @@
 |377| [How do you disable right click in the web page?](#how-do-you-disable-right-click-in-the-web-page)|
 
 
-1. ### What are the possible ways to create objects in JavaScript?
 
-There are many ways to create objects in javascript as below,
-
-1. **Object constructor:**
-
- The simplest way to create an empty object is using Object constructor. Currently this approach is not recommended.
-
- ```javascript
- var object = new Object();
- ```
-
- 2. **Object's create method:**
-
- The create method of Object creates a new object by passing the prototype object as a parameter
- ```javascript
- var object = Object.create(null);
- ```
-
- 3. **Object literal syntax:**
- The object literal syntax is equivalent to create method when it passes null as parameter
- ```javascript
- var object = {};
- ```
-
- 4. **Function constructor:**
- Create any function and apply the new operator to create object instances,
- ```javascript
- function Person(name){
-  var object = {};
-  object.name=name;
-  object.age=21;
-  return object;
- }
- var object = new Person("Sudheer");
- ```
-
- 5. **Function constructor with prototype:**
- This is similar to function constructor but it uses prototype for their properties and methods,
-
-```javascript
-function Person(){}
-Person.prototype.name = "Sudheer";
-var object = new Person();
-```
-
-This is equivalent to an instance created with an object create method with a function prototype and then call that function with an instance and parameters as arguments.
-```javascript
-function func {};
-
-new func(x, y, z);
-
-**(OR)**
-
-// Create a new instance using function prototype.
-var newInstance = Object.create(func.prototype)
-
-// Call the function
-var result = func.call(newInstance, x, y, z),
-
-// If the result is a non-null object then use it otherwise just use the new instance.
-console.log(result && typeof result === 'object' ? result : newInstance);
-```
-
-6. **ES6 Class syntax:**
-ES6 introduces class feature to create the objects
-```javascript
-class Person {
- constructor(name) {
-    this.name = name;
- }
-}
-
-var object = new Person("Sudheer");
-```
-
-7. **Singleton pattern:**
-A Singleton is an object which can only be instantiated one time. Repeated calls to its constructor return the same instance and this way one can ensure that they don't accidentally create multiple instances.
-```javascript
-var object = new function(){
-  this.name = "Sudheer";
-}
-```
-
-**[⬆ Back to Top](#table-of-contents)**
 
 2. ### What is prototype chain?
 
@@ -585,33 +496,6 @@ Some of the major difference in a tabular form
 5. An Object has a prototype, so there are default keys in the map that could collide with your keys if you're not careful. As of ES5 this can be bypassed by using map = Object.create(null), but this is seldom done.
 6. A Map may perform better in scenarios involving frequent addition and removal of key pairs.
 
-**[⬆ Back to Top](#table-of-contents)**
-
-9. ### What is the difference between == and === operators?
-JavaScript provides both strict(===, !==) and type-converting(==, !=) equality comparison. The strict operators takes type of variable in consideration, while non-strict operators make type correction/conversion based upon values of variables. The strict operators follow the below conditions for different types,
-1. Two strings are strictly equal when they have the same sequence of characters, same length, and same characters in corresponding positions.
-2. Two numbers are strictly equal when they are numerically equal. i.e, Having the same number value.
-   There are two special cases in this,
-   1. NaN is not equal to anything, including NaN.
-   2. Positive and negative zeros are equal to one another.
-3. Two Boolean operands are strictly equal if both are true or both are false.
-4. Two objects are strictly equal if they refer to the same Object.
-5. Null and Undefined types are not equal with ===, but equal with ==. i.e,
-    null===undefined --> false but null==undefined --> true
-
-Some of the example which covers the above cases
-```javascript
-0 == false   // true
-0 === false  // false
-1 == "1"     // true
-1 === "1"    // false
-null == undefined // true
-null === undefined // false
-'0' == false // true
-'0' === false // false
-[]==[] or []===[] //false, refer different objects in memory
-{}=={} or {}==={} //false, refer different objects in memory
-```
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -687,50 +571,6 @@ console.log (numberArray); // returns [6]
 ```
 As per above code snippets, Push function is impure itself by altering the array and returning an push number index which is independent of parameter value. Whereas Concat on the other hand takes the array and concatenates it with the other array producing a whole new array without side effects. Also, the return value is a concatenation of previous array.
 Remember that Pure functions are important as they simplify unit testing without any side effects and no need for dependency injection. They also avoid tight coupling and makes harder to break your application by not having any side effects. These principles are coming together with **Immutability** concept of ES6 by giving preference to **const** over **let** usage.
-
-**[⬆ Back to Top](#table-of-contents)**
-
-17. ### What is the purpose of let keyword?
-
-The let statement declares a **block scope local variable**. Hence the variables defined with let keyword are limited in scope to the block, statement, or expression on which it is used. Whereas variables declared with the var keyword used to define a variable globally, or locally to an entire function regardless of block scope. Let's take an example to demonstrate the usage,
-```javascript
-let counter = 30;
-if (counter === 30) {
-  let counter = 31;
-  console.log(counter); // 31
-}
-console.log(counter); // 30 (because if block variable won't exist here)
-```
-
-**[⬆ Back to Top](#table-of-contents)**
-
-18. ### What is the difference between let and var?
-You can list out the differences in a tabular format
-
-| var | let |
-|---- | ---------
-| It is been available from the beginning of JavaScript  | Introduced as part of ES6 |
-| It has function scope | It has block scope  |
-| Variables will be hoisted | Hoisted but not initialized |
-
-Let's take an example to see the difference,
-```javascript
-function userDetails(username) {
-   if(username) {
-     console.log(salary); // undefined(due to hoisting)
-     console.log(age); // error: age is not defined
-     let age = 30;
-     var salary = 10000;
-   }
-   console.log(salary); //10000 (accessible to due function scope)
-   console.log(age); //error: age is not defined(due to block scope)
-}
-```
-
-**[⬆ Back to Top](#table-of-contents)**
-
-19. ### What is the reason to choose the name let as keyword?
-    Let is a mathematical statement that was adopted by early programming languages like Scheme and Basic. It has been borrowed from dozens of other languages that use let already as a traditional keyword as close to var as possible.
 
 **[⬆ Back to Top](#table-of-contents)**
 
@@ -5507,28 +5347,7 @@ You can reuse code: Define the code once, and use it many times.
 You can use the same code many times with different arguments, to produce different results.
 ⬆ Back to Top
 
-Ques. What is JavaScript Object?
-Ans.
 
-An object can be created with curly brackets { } with an optional list of properties.
-A property is a “Key:value” pair, where the key (or property name) is always a string, and value (or property value) can be any data type, like string, number, boolean or complex data type like array, function, and other objects.
-⬆ Back to Top
-
-Ques. What are the possible ways to create objects in javascript?
-Ans.
-
-Object constructor:- var object = new Object();
-Object’s crate method:- var object = Object.create(null);
-Object literal syntex:- var object = {};
-Function Constructor:-
-Function constructor with prototype:-
-ES6 class Syntex:-
-Singleton pattern:-
-Accessing object:- var book = { "name": "Harry Potter and the Goblet of Fire", "author": "J. K. Rowling", "year": 2000 }; document.write(book.author); // Prints: J. K. Rowling document.write(book["year"]); // Prints: 2000
-
-Setting object:- var person = { name: "Peter", age: 28, gender: "Male" }; // Setting a new property person.country = "United States"; document.write(person.country); // Prints: United States
-
-Deleting object:- var person = { name: "Peter", age: 28, gender: "Male", displayName: function() { alert(this.name); } }; // Deleting property delete person.age; alert(person.age); // Outputs: undefined
 
 ⬆ Back to Top
 
