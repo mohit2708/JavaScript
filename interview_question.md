@@ -9,6 +9,7 @@
 |  | [Difference between Java and JavaScript?](#ques-Difference-between-Java-and-JavaScript)|
 |  | [JavaScript Data Type?](#ques-JavaScript-Data-Type)|
 |  |[What is the javaScript Variable?](#ques-What-is-the-javaScript-Variable)|
+|  |[Dfference between var and Let?](#ques-difference-between-var-and-let)
 |  |[What is Operate in javascript?](#ques-What-is-Operate-in-javascript)|
 |  |[What is the javaScript Comment?](#ques-What-is-the-javaScript-Comment)|
 |  |[What is the difference between the operators '==' and '==='?](#ques-What-is-the-difference-between-the-operators-'=='-and-'===')|
@@ -104,6 +105,57 @@ __Ans.__
 * javaScript includes variables which hold the data value and it can be changed anytime.
 * To create a variable in JavaScript, use the let keyword.
 * Variables named apple and AppLE are two different variables.
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. Dfference between var and Let?
+|Var|let|
+|:---:|:---:|
+|It has a global/function scope.|It is limited to block scope.|
+|It can be declared globally and can be accessed globally.|It can be declared globally but cannot be accessed globally.|
+|It is hoisted.|It is not hoisted.|
+|Variable declared with var keyword can be re-declared and updated in the same scope.|Variable declared with let keyword can be updated but not re-declared.|
+Example:	
+function varGreeter(){ 
+var a = 10;
+ var a = 20; //a is replaced
+ console.log(a);
+ } 
+varGreeter();
+Example: 
+function varGreeter(){ 
+let a = 10; 
+let a = 20; //SyntaxError: 
+//Identifier 'a' has already been declared console.log(a);
+ } 
+varGreeter();
+Variables will be hoisted
+Hoisted but not initialized
+
+let message;
+message = 'Hello!';
+alert(message); // shows the variable content
+
+let user = 'John', age = 25, message = 'Hello';   //We can also declare multiple variables in one line:
+
+A real-life analogy:-
+
+let message;
+message = 'Hello!';
+message = 'World!'; // value changed
+alert(message);  //World
+
+let hello = 'Hello world!';
+let message;  // copy 'Hello world' from hello into message
+message = hello;// now two variables hold the same data
+alert(hello); // Hello world!
+alert(message); // Hello world!
+
+Variable naming:-
+There are two limitations on variable names in JavaScript:
+The name must contain only letters, digits, or the symbols $ and _.
+The first character must not be a digit.
+
+
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is Operate in javascript?<br>
