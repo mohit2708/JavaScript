@@ -466,6 +466,7 @@ function outerFunction(callback) {
 
 outerFunction(callbackFunction);
 ```
+
 **[⬆ Back to Top](#table-of-contents)**
 ### What is callback in callback?
 You can nest one callback inside in another callback to execute the actions sequentially one by one. This is known as callbacks in callbacks.
@@ -487,6 +488,28 @@ loadScript('/script1.js', function(script) {
 
 });
 ```
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is a promise?
+A promise is an object that may produce a single value some time in the future with either a resolved value or a reason that it’s not resolved(for example, network error). It will be in one of the 3 possible states: fulfilled, rejected, or pending.
+    The syntax of promise would be as below
+    ```javascript
+    const promise = new Promise(function(resolve, reject) {
+      // promise description
+    })
+    ```
+
+    **[⬆ Back to Top](#table-of-contents)**
+
+### Ques. Why do you need a promise?
+Promises are used to handle asynchronous operations. They provide an alternative approach for callbacks by reducing the callback hell and writing the cleaner code.
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What are the three states of promise?
+    Promises have three states:
+    1. **Pending:** This is an initial state of the Promise before an operation begins
+    2. **Fulfilled:** This state indicates that specified operation was completed.
+    3. **Rejected:** This state indicates that the operation did not complete. In this case an error value will be thrown.
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is the difference between write and writeln?
