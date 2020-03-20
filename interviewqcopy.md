@@ -5156,16 +5156,6 @@ Remember that Pure functions are important as they simplify unit testing without
 |---- | ---------
 
 
-
-
-
-
-difference between var and Let?
-
-What is JavaScript Function?
-What is JavaScript Object?
-What are the possible ways to create objects in javascript?
-What are lambda or arrow functions?
 What is currying function?
 What is Generator function?
 What is a proxy object?
@@ -5298,91 +5288,7 @@ function InnerFunction() {
 Ques. When to use Closure?
 Ans. Closure is useful in hiding implementation detail in JavaScript. In other words, it can be useful to create private variables or functions.
 
-⬆ Back to Top
 
-Ques. What is JavaScript Function?
-Ans.
-
-A JavaScript function is a block of code designed to perform a particular task.
-You can reuse code: Define the code once, and use it many times.
-You can use the same code many times with different arguments, to produce different results.
-⬆ Back to Top
-
-
-
-⬆ Back to Top
-
-Ques. What are lambda or arrow functions?
-Ans. An arrow function is a shorter syntex for a function.
-
-⬆ Back to Top
-
-Ques. What is currying function?
-Ans.
-
-Currying is a technique of evaluating function with multiple arguments, into sequence of function with single argument.
-Currying is a transformation of functions that translates a function from callable as f(a, b, c) into callable as f(a)(b)(c).
-Currying is an advanced technique of working with functions. It’s used not only in JavaScript, but in other languages as well.
-Currying helps you to avoid passing the same variable again and again.
-function curry(f) { // curry(f) does the currying transform
-  return function(a) {
-    return function(b) {
-      return f(a, b);
-    };
-  };
-}
-
-// usage
-function sum(a, b) {
-  return a + b;
-}
-
-let curriedSum = curry(sum);
-
-alert( curriedSum(1)(2) ); // 3
-
-
-A partial invocation of a Javascript function is called Currying. Few arguments of a function are processed and a function is returned. Few more arguments are added by the returning function.
-
-
-What is currying function?
-Currying is the process of taking a function with multiple arguments and turning it into a sequence of functions each with only a single argument. Currying is named after a mathematician Haskell Curry. By applying currying, a n-ary function turns it into a unary function. Let's take an example of n-ary function and how it turns into a currying function
-const multiArgFunction = (a, b, c) => a + b + c;
-const curryUnaryFunction = a => b => c => a + b + c;
-curryUnaryFunction (1); // returns a function: b => c =>  1 + b + c
-curryUnaryFunction (1) (2); // returns a function: c => 3 + c
-curryUnaryFunction (1) (2) (3); // returns the number 6
-Curried functions are great to improve code re-usability and functional composition.
-⬆ Back to Top
-
-Ques. What is Generator function?
-Ans.
-
-Generators are a special class of functions that simplify the task of writing iterators.
-A generator is a function that produces a sequence of results instead of a single value, i.e you generate ​a series of values.
-Regular functions return only one, single value (or nothing).
-Generators can return (“yield”) multiple values, one after another, on-demand.
-
-
-Syntax
-function* name([param[, param[, ... param]]]) {
-   statements
-}
-
-Generators are created by generator functions function* f(…) {…}.
-⬆ Back to Top
-
-Ques. What is the difference between write and writeln?
-Ans. write and writeln are the same function. The only difference is that writeln adds a new line at the end of the text. writeln adds a \n character to the end of the string
-
-document.write("Hello World!");
-document.write("Have a nice day!"); 
-output:- //Hello World!Have a nice day!
-
-document.writeln("Hello World!");
-document.writeln("Have a nice day!"); 
-Output:- //Hello World!
-	//Have a nice day!
 ⬆ Back to Top
 
 Ques. What is JavaScript Math Object?
@@ -5666,13 +5572,6 @@ function myFunction() {
 JavaScript Array Method
 
 
-
-
-
-Ques. What is the use of isNaN Function ?
-Ans. isNan function returns true if the argument is not a number otherwise it is false.
-NaN is a short form of Not a Number.
-
 Ques. Why Is Javascript called Richer Interface?
 Ans. You can use JavaScript to include such items as drag-and-drop components and sliders to give a Rich Interface to your site visitors.
 
@@ -5854,63 +5753,63 @@ Boolean to Number: Number(true) converts to no.
 Null to Number: Number(null) converts to no. (0)
 Chars to Number: Number('ss') give NaN.
 
-10) What is the difference between the keywords var and let?
-The keyword var is from the beginning of Javascript; whereas, let is introduced in ES2015/ES6. The keyword let has a block scope; whereas, the keyword var has a functional scope.
 
 12) What is the difference between null and undefined?
 When used the typeof operator on null; i.e., typeof(null), the value is an object. Whereas, when used the typeof operator on undefined; i.e., typeof(undefined), the value would be undefined.
-13) Are Javascript and JScript the same?
-No, Javascript was provided by Netscape; whereas, JScript was provided by Microsoft.
+
+
 14) Are Typescript and Javascript the same?
 Typescript is not the next version of Javascript but is developed by Microsoft and can be taken as a superset to Javascript; the code written in Typescript is later compiled into Javascript. Typescript adds new features like Interfaces, Generics, etc.
-15) Name some of the Javascript frameworks.
-There are many Javascript Frameworks available today, but the most commonly used frameworks are:
-(i) Angular (ii) React (iii) Vue
+
+
 16) Explain the typeof operator.
 The operator typeof is an example of Unary Operators, which is used by placing it before its operand; which can be of any type.
-You may also like: Top 30 Interview Questions and Answers on Angular 5
-Javascript Console (Arrays & Functions) Questions
-
 
 19) What are self Executing Functions?
 These functions are executed right after its definition. Also called as Immediately Invoked Function Expressions (IIFE's). Syntax:
 (function(){
 console.log('in iffe');
 })()
+
 20) What is a function callback?
 The callback function is a mechanism to send one function to another function as an argument; i.e., passing func as an argument to another function.
+
 21) What happens when the recursion calling is applied on two functions?
 The calling of recursion is possible in two functions, but the call comes to an end after some time.
 22) Explain the term closure.
 The inner functions can be called as closure when it has access to the outer function's variables.
 23) Explain the terms synchronous and asynchronous code.
 The synchronous code is something that should be finished before anything else can happen, or in other words, the synchronous code is blocking. And the Asynchronous code is something in which actions can happen and is not dependent on other actions- in other words, it is non-blocking.
-24) Name the different types of pop up boxes in Javascript.
-There are three types of pop up boxes in Javascript (i) alert() provides some information to the user with just an OK button (ii) confirm() asks a question to the user with two options Ok and cancel, and (iii) prompt() takes an input from the user.
+
+
 25) What is the use of the ‘this’ keyword?
 The keyword ‘this’ refers to the current instance of the object when used inside a function. But, when used outside a function, it refers to the window object.
 26) Is Exception handling possible in Javascript?
 With the latest version of Javascript, exception handling is possible; and this can be achieved using the following keywords try, catch and finally.
 27) How is it possible to get the total number of arguments that are passed to a function?
 The arguments.length property helps in getting the total number of arguments that are passed to a function.
+
 28) What is the difference between typeof and instanceof operators in Javascript?
 The typeof operator returns a string of what type the operand is. Whereas, the instanceof operator does not work with primitive data types; but works with objects and checks on what type the object is.
-Explore Top 5 Skills That Make You A Sure Shot Programmer
-Javascript DOM (Document Object Model) Questions
+
+
 29) What is DOM?
 DOM (Document Object Model) is an object-oriented representation of the HTML elements. All the elements (or nodes) are part of window.document.
+
 30) Expand BOM and explain it.
 BOM stands for Browser Object Model. Using BOM interaction with a browser is possible. Default object of the browser is a window.
 31) What is the difference between window and document in Javascript?
 Javascript window is a global object which holds variables, functions, history, location; the document also comes under the window and can be considered as the property of the window.
 32) What is the difference between innerHTML and innerText?
 innerHTML will process an HTML tag if found in a string, whereas innerText will not. For Example document.querySelector('p').innerHTML='one <br> two' gives the output one and two in two lines as <br> in html is a new line. Whereas document.querySelector('p').innerText='one <br> two' gives the output of the text as it is in one line.
+
 33) What is the difference between textContent and innerText?
 Let us have a paragraph element and a span element in it as a child element.
 <p>some text and a <span style="visibility: hidden">span tag hidden <\span>in it</p>
 Now, if the following two steps would result in the following-
 console.log(document.querySelector('p').textContent); gives some text and a span tag hidden in it.
 console.log(document.querySelector('p').innerText); gives some text and a in it.
+	
 34) What is the difference between HTMLCollection and NodeList?
 The functions querySelectorAll() returns NodeList in which the forEach can be used directly to traverse the elements. Whereas, the getElementsByClassName() or getElementsByTagName() returns an HTMLCollection, which does not have a forEach by default.
 35) How can an HTMLCollection be traversed?
@@ -5952,7 +5851,8 @@ Primitive types in Javascript are passed by value; whereas, object types are pas
 47) What is NaN in Javascript?
 NaN is a short form of Not a Number. When a string or something else is being converted into a number and that cannot be done, then we get to see NaN. A strange thing about NaN is that it is not equal to anything including itself.
 48) List out all the falsifying tokens in Javascript.
-There are 6 tokens that falsify in Javascript and they are false, null, undefined, 0, NaN.
+There are 6 tokens that falsify in Javascript and they are false, null, undefined, 0, NaN.\
+
 49) What is Currying in Javascript?
 A partial invocation of a Javascript function is called Currying. Few arguments of a function are processed and a function is returned. Few more arguments are added by the returning function.
 
@@ -5998,10 +5898,10 @@ Global variables are those that are available throughout the length of the code,
 Example:
 // Declare a global globalVariable = "Test";
 The problems that are faced by using global variables are the clash of variable names of local and global scope. Also, it is difficult to debug and test the code that relies on global variables.
-12. What is a prompt box?
-A prompt box is a box which allows the user to enter input by providing a text box. Label and box will be provided to enter the text or number.
+
 13. What is 'this' keyword in JavaScript?
-'This' keyword refers to the object from where it was called.
+'This' keyword refers to the object from where it was called.\
+
 14. Explain the working of timers in JavaScript? Also elucidate the drawbacks of using the timer, if any?
 Timers are used to execute a piece of code at a set time or also to repeat the code in a given interval of time. This is done by using the functions setTimeout, setInterval and clearInterval.
 The setTimeout(function, delay) function is used to start a timer that calls a particular function after the mentioned delay. The setInterval(function, delay) function is used to repeatedly execute the given function in the mentioned delay and only halts when cancelled. The clearInterval(id) function instructs the timer to stop.
@@ -6061,9 +5961,6 @@ Alert
 Confirm and
 Prompt
 
-35. What is the difference between an alert box and a confirmation box?
-An alert box displays only one button which is the OK button.
-But a Confirmation box displays two buttons namely OK and cancel.
 
 32. What is the use of Void(0)?
 Void(0) is used to prevent the page from refreshing and parameter "zero" is passed while calling.
@@ -6082,16 +5979,16 @@ Example:
 document.write "I m a "good" boy"
 document.write "I m a \"good\" boy"
 
-37. What are JavaScript Cookies?
-Cookies are the small test files stored in a computer and it gets created when the user visits the websites to store information that they need. Example could be User Name details and shopping cart information from the previous visits.
 38. Explain what is pop()method in JavaScript?
 The pop() method is similar as the shift() method but the difference is that the Shift method works at the start of the array. Also the pop() method take the last element off of the given array and returns it. The array on which is called is then altered.
 Example:
 var cloths = ["Shirt", "Pant", "TShirt"];
 cloths.pop();
 //Now cloth becomes Shirt,Pant
+
 39. Whether JavaScript has concept level scope?
 No. JavaScript does not have concept level scope. The variable declared inside the function has scope inside the function.
+
 40. Mention what is the disadvantage of using innerHTML in JavaScript?
 If you use innerHTML in JavaScript the disadvantage is
 Content is replaced everywhere
@@ -6099,17 +5996,12 @@ We cannot use like "appending to innerHTML"
 Even if you use +=like "innerHTML = innerHTML + 'html'" still the old content is replaced by html
 The entire innerHTML content is re-parsed and build into elements, therefore its much slower
 The innerHTML does not provide validation and therefore we can potentially insert valid and broken HTML in the document and break it
+
 41. What is break and continue statements?
 Break statement exits from the current loop.
 Continue statement continues with next statement of the loop.
-42. What are the two basic groups of dataypes in JavaScript?
-They are as –
-Primitive
-Reference types.
-Primitive types are number and Boolean data types. Reference types are more complex types like strings and dates.
-43. How generic objects can be created?
-Generic objects can be created as:
-var I = new object();
+
+
 44. What is the use of type of operator?
 'Typeof' is an operator which is used to return a string description of the type of a variable.
 45. Which keywords are used to handle exceptions?
@@ -6123,14 +6015,15 @@ Catch(exp){
 Finally{
 	Code runs either it finishes successfully or after catch
 }
-46. Which keyword is used to print the text in the screen?
-document.write("Welcome") is used to print the text – Welcome in the screen.
+
 47. What is the use of blur function?
 Blur function is used to remove the focus from the specified object.
+
 48. What is variable typing?
 Variable typing is used to assign a number to a variable and then assign string to the same variable. Example is as follows:
 i= 8;
 i="john";
+
 49. How to find operating system in the client machine using JavaScript?
 The 'Navigator.appversion' is used to find the name of the operating system in the client machine.
 50. What are the different types of errors in JavaScript?
@@ -7447,6 +7340,7 @@ someObject.myMethod.apply(someOtherObject, ['<', '>']);
 Question: What role do deferred scripts play in JavaScript?
 Answer: During page loading, the parsing of the HTML code is paused by default until the script hasn’t stopped executing. This results in a delay in the display of the webpage if the server is slow or the script that is to be loaded is bulky.
 Using deferred scripts results into a delay in the execution of the script for the time the HTML parser is running. Hence, this results in a reduction in the loading time of the webpage.
+
 Question: Could you tell us about the various types of error constructors supported by JavaScript?
 Answer: The Error constructor is responsible for creating an error object. Instances of the error objects are thrown when runtime errors occur. Moreover, the Error object can also be used as a base object for user-defined exceptions.
 Other than the generic Error constructor, JS provides support for 7 error constructors that are:
@@ -7457,6 +7351,7 @@ ReferenceError – Creates an error instance regarding de-referencing an invalid
 SyntaxError – Creates an error instance regarding a syntax error occurring while parsing code in eval().
 TypeError – Creates an error instance regarding a parameter or variable not of a valid type.
 URIError – Creates an error instance regarding when invalid parameters are passed to the decodeURI() or encodeURI().
+
 Question: What do you understand by Screen objects? State their various properties.
 Answer: In order to read the information from the client’s screen, screen objects are used in JavaScript. Properties of screen objects are:
 AvailHeight – Gives out the height of the client screen (Excludes taskbar)
@@ -7464,6 +7359,7 @@ AvailWidth – Gives out the width of the client screen (Excludes taskbar)
 ColorDepth – Gives out the bit depth of images supported by the client screen
 Height – Gives out the total height of the client screen
 Width – Gives out the total width of the client screen
+
 Question: Could you explain escape() and unescape() functions?
 Answer: The escape() function allows for converting a string into a coded form in JavaScript. It is used for securely transferring information from one system to another over some network. For instance, consider the following code snippet:
 This%20string%20is%20encoded%21
@@ -7483,7 +7379,7 @@ Check out these best JavaScript tutorials to enhance your JS skill and knowledge
 
 
 
-================================================================================================================================
+======================================================================================================================
 
 
 
