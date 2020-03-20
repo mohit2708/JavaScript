@@ -17,6 +17,11 @@
 |  |[What is Local Storage in JavaScript?](#ques-What-is-Local-Storage-in-JavaScript)|
 |  |[What is Session Storage in JavaScript?](#ques-What-is-Session-Storage-in-JavaScript)|
 |  |[What is the difference between Local storage & Session storage](#ques-What-is-the-difference-between-Local-storage-&-Session-storage)|
+|  |[What is Proxy object?](#ques-What-is-Proxy-object)|
+|  |[What is JavaScript Object?](#ques-What-is-JavaScript-Object)|
+|  |[What are the possible ways to create objects in javascript?](#ques-What-are-the-possible-ways-to-create-objects-in-javascript)|
+|  |[What is JavaScript Function](#ques-What-is-JavaScript-Function)|
+|  |[]()|
 |  |[]()|
 
 
@@ -348,3 +353,11 @@ Accessing object:- var book = { "name": "Harry Potter and the Goblet of Fire", "
 Setting object:- var person = { name: "Peter", age: 28, gender: "Male" }; // Setting a new property person.country = "United States"; document.write(person.country); // Prints: United States
 
 Deleting object:- var person = { name: "Peter", age: 28, gender: "Male", displayName: function() { alert(this.name); } }; // Deleting property delete person.age; alert(person.age); // Outputs: undefined
+
+**[⬆ Back to Top](#table-of-contents)**
+### What is JavaScript Function?
+* A JavaScript function is a block of code designed to perform a particular task.
+* You can reuse code: Define the code once, and use it many times.
+* You can use the same code many times with different arguments, to produce different results.
+
+**[⬆ Back to Top](#table-of-contents)**
