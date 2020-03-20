@@ -436,7 +436,17 @@ Curried functions are great to improve code re-usability and functional composit
 * Regular functions return only one, single value (or nothing).
 * Generators can return (“yield”) multiple values, one after another, on-demand.
 * Generators are created by generator functions function* f(…) {…}.
-
+```javascript
+function* idMaker() {
+    var index = 0;
+    while(true)
+        yield index++;
+}
+var gen = idMaker(); // "Generator { }"
+console.log(gen.next().value); // 0
+console.log(gen.next().value); // 1
+console.log(gen.next().value); // 2
+```
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is the difference between write and writeln?
