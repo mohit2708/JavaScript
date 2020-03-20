@@ -38,10 +38,7 @@
 |37 | [What is a cookie?](#what-is-a-cookie)|
 |38 | [Why do you need a Cookie?](#why-do-you-need-a-cookie)|
 |39 | [What are the options in a cookie?](#what-are-the-options-in-a-cookie)|
-|40 | [How do you delete a cookie?](#how-do-you-delete-a-cookie)|
 |41 | [What are the differences between cookie, local storage and session storage?](#What-are-the-differences-between-cookie,-local-storage-and-session-storage)|
-|42 | [What is the main difference between localStorage and sessionStorage?](#what-is-the-main-difference-between-localstorage-and-sessionstorage)|
-|43 | [How do you access web storage?](#how-do-you-access-web-storage)|
 |44 | [What are the methods available on session storage?](#what-are-the-methods-available-on-session-storage)|
 |45 | [What is a storage event and its event handler?](#what-is-a-storage-event-and-its-event-handler)|
 |46 | [Why do you need web storage?](#why-do-you-need-web-storage)|
@@ -793,21 +790,9 @@ Remember that Pure functions are important as they simplify unit testing without
 
     **[⬆ Back to Top](#table-of-contents)**
 
-37. ### What is a Cookie?
-    A cookie is a piece of data that is stored on your computer to be accessed by your browser. Cookies are saved as key/value pairs.
-    For example, you can create a cookie named username as below,
-    ```javascript
-    document.cookie = "username=John";
-    ```
 
-    **[⬆ Back to Top](#table-of-contents)**
 
-38. ### Why do you need a Cookie?
-    Cookies are used to remember information about the user profile(such as username). It basically involves two steps,
-    1. When a user visits a web page, user profile can be stored in a cookie.
-    2. Next time the user visits the page, the cookie remembers user profile.
-
-    **[⬆ Back to Top](#table-of-contents)**
+**[⬆ Back to Top](#table-of-contents)**
 
 39. ### What are the options in a cookie?
     There are few below options available for a cookie,
@@ -822,13 +807,7 @@ Remember that Pure functions are important as they simplify unit testing without
 
     **[⬆ Back to Top](#table-of-contents)**
 
-40. ### How do you delete a cookie?
-    You can delete a cookie by setting the expiry date as a passed date. You don't need to specify a cookie value in this case.
-    For example, you can delete a username cookie in the current page as below.
-    ```javascript
-    document.cookie = "username=; expires=Fri, 07 Jun 2019 00:00:00 UTC; path=/;";
-    ```
-    **Note:** You should define the cookie path option to ensure that you delete the right cookie. Some browsers doesn't allow to delete a cookie unless you specify a path parameter.
+
 
     **[⬆ Back to Top](#table-of-contents)**
 
@@ -844,8 +823,7 @@ Remember that Pure functions are important as they simplify unit testing without
 
     **[⬆ Back to Top](#table-of-contents)**
 
-42. ### What is the main difference between localStorage and sessionStorage?
-    LocalStorage is same as SessionStorage but it persists the data even when the browser is closed and reopened(i.e it has no expiration time) whereas in sessionStorage data gets cleared when the page session ends.
+
 
     **[⬆ Back to Top](#table-of-contents)**
 
@@ -859,23 +837,6 @@ Remember that Pure functions are important as they simplify unit testing without
 
     **[⬆ Back to Top](#table-of-contents)**
 
-44. ### What are the methods available on session storage?
-    The session storage provided methods for reading, writing and clearing the session data
-    ```javascript
-    // Save data to sessionStorage
-    sessionStorage.setItem('key', 'value');
-
-    // Get saved data from sessionStorage
-    let data = sessionStorage.getItem('key');
-
-    // Remove saved data from sessionStorage
-    sessionStorage.removeItem('key');
-
-    // Remove all saved data from sessionStorage
-    sessionStorage.clear();
-    ```
-
-    **[⬆ Back to Top](#table-of-contents)**
 
 45. ### What is a storage event and its event handler?
     The StorageEvent is an event that fires when a storage area has been changed in the context of another document. Whereas onstorage property is an EventHandler for processing storage events.
