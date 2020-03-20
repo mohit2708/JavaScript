@@ -25,6 +25,7 @@
 |  |[What are lambda or arrow functions?](#ques-What-are-lambda-or-arrow-functions)|
 |  |[What is currying function?](#ques-What-is-currying-function)|
 |  |[What is Generator function?](#ques-What-is-Generator-function)|
+|  |[What is a callback function?](#ques-What-is-a-callback-function)|
 |  |[What is the difference between write and writeln?](#ques-What-is-the-difference-between-write-and-writeln)|
 |  |[Name the different types of pop up boxes in Javascript?](#Ques-Name-the-different-types-of-pop-up-boxes-in-Javascript)|
 |  |[]()|
@@ -446,6 +447,22 @@ var gen = idMaker(); // "Generator { }"
 console.log(gen.next().value); // 0
 console.log(gen.next().value); // 1
 console.log(gen.next().value); // 2
+```
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is a callback function?
+callback function is a function passed into another function as an argument.
+```javascript
+function callbackFunction(name) {
+  console.log('Hello ' + name);
+}
+
+function outerFunction(callback) {
+  let name = prompt('Please enter your name.');
+  callback(name);
+}
+
+outerFunction(callbackFunction);
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
