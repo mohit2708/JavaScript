@@ -552,7 +552,7 @@ There are three types of pop up boxes in Javascript<br>
 
 
 **[⬆ Back to Top](#table-of-contents)**
-### Ques. What is the setInterval?
+### Ques. What is the setInterval & clearInterval?
 * The setInterval() method calls a function or evaluates an expression at specified intervals (in milliseconds).
 * The setInterval() method will continue calling the function until clearInterval() is called, or the window is closed.
 * The ID value returned by setInterval() is used as the parameter for the clearInterval() method.<br>
@@ -562,6 +562,7 @@ function myFunction() {
   setInterval(function(){ alert("Hello"); }, 3000);
 }
 ```
+The __clearInterval()__ method clears a timer set with the setInterval() method.
 ```javascript
 <button onclick="myStopFunction()">Stop time</button>
 <script>
