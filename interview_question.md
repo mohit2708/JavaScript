@@ -549,3 +549,31 @@ There are three types of pop up boxes in Javascript<br>
 (i) alert() provides some information to the user with just an OK button<br>
 (ii) confirm() asks a question to the user with two options Ok and cancel, and<br>
 (iii) prompt() takes an input from the user.
+
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is the setInterval?
+* The setInterval() method calls a function or evaluates an expression at specified intervals (in milliseconds).
+* The setInterval() method will continue calling the function until clearInterval() is called, or the window is closed.
+* The ID value returned by setInterval() is used as the parameter for the clearInterval() method.<br>
+__syntex:-__ setInterval(function, milliseconds, param1, param2, ...)
+```javascript
+function myFunction() {
+  setInterval(function(){ alert("Hello"); }, 3000);
+}
+```
+```javascript
+<button onclick="myStopFunction()">Stop time</button>
+<script>
+var myVar = setInterval(myTimer, 1000);
+function myTimer() {
+  var d = new Date();
+  var t = d.toLocaleTimeString();
+  document.getElementById("demo").innerHTML = t;
+}
+function myStopFunction() {
+  clearInterval(myVar);
+}
+</script>
+```
+
