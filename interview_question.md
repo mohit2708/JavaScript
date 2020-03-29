@@ -30,8 +30,8 @@
 |  |[What is callback in callback?](#ques-What-is-callback-in-callback)|
 |  |[What is the difference between write and writeln?](#ques-What-is-the-difference-between-write-and-writeln)|
 |  |[Name the different types of pop up boxes in Javascript?](#Ques-Name-the-different-types-of-pop-up-boxes-in-Javascript)|
-|  |[]()|
-|  |[]()|
+|  |[What is the setInterval & clearInterval?](#ques-What-is-the-setInterval-&-clearInterval)|
+|  |[What is addEventListener & removeEventListener & useCapture?](#Ques-What-is-addEventListener-&-removeEventListener-&-useCapture?)|
 |  |[]()|
 
 
@@ -113,6 +113,52 @@ __Symbol:–__ Used for creating unique identifiers for objects
 __Undefined–__ Represents value not assigned. If a variable is only declared and not assigned in JS, then it represents the undefined data type
 
 **[⬆ Back to Top](#table-of-contents)**
+### Ques. What is the loops?
+
+__While__<br>
+var a = 1;
+while (a<=10){
+  document.write("mohit<br>");
+  a= a+1;
+}
+
+__forEach()__
+```sql
+var a = ['mohit', 'saxena', 'amit']
+a.forEach(function(index value){
+document.write(index value) 
+})
+```
+__For Loop__
+```sql
+for(var a =1; a<=10; a++)
+{
+  document.write("hello");
+}
+10 tak print hoga hallo
+```
+```
+========================
+For in loop
+var obj = {
+  name: mohit
+  lname: saxena
+  age: 27
+};
+for(var key in obj)
+{
+  document.write(obj[key] + "<br>")
+}
+===================
+var a=1;
+do {
+  document.write("hello");
+  a++;
+}
+while(a<=10)
+```
+
+**[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is the javaScript Variable?
 __Ans.__
 * A javaScript Variable is simply a name of storage location. There are 2 types of variable in javaScript.
@@ -133,7 +179,7 @@ __Ans.__
 |It can be declared globally and can be accessed globally.|It can be declared globally but cannot be accessed globally.|
 |It is hoisted.|It is not hoisted.|
 |Variable declared with var keyword can be re-declared and updated in the same scope.|Variable declared with let keyword can be updated but not re-declared.|
-Example:	
+Example:  
 function varGreeter(){ 
 var a = 10;
  var a = 20; //a is replaced
@@ -173,7 +219,6 @@ Variable naming:-
 There are two limitations on variable names in JavaScript:
 The name must contain only letters, digits, or the symbols $ and _.
 The first character must not be a digit.
-
 
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -229,11 +274,11 @@ __5. sessionStorage.clear(); :-__ Remove all saved data from sessionStorage
 window.localStorage.setItem("user","mohit");
 window.localStorage.setItem("email","mksaxena27@gmail.com");
 console.log(localStorage);
-console.log(localStorage.length)		//2
-console.log(localStorage.getItem('email'))	//mksaxena27@gmail.com
-console.log(localStorage.key(0))		//email
-localStorage.removeItem('email')		//email delete ho gaya
-localStorage.clear()				// all localstorage clear
+console.log(localStorage.length)    //2
+console.log(localStorage.getItem('email'))  //mksaxena27@gmail.com
+console.log(localStorage.key(0))    //email
+localStorage.removeItem('email')    //email delete ho gaya
+localStorage.clear()        // all localstorage clear
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -535,7 +580,7 @@ output:- //Hello World!Have a nice day!
 document.writeln("Hello World!");
 document.writeln("Have a nice day!"); 
 Output:- //Hello World!
-	//Have a nice day!
+  //Have a nice day!
  ```
  
  **[⬆ Back to Top](#table-of-contents)**
@@ -543,7 +588,7 @@ Output:- //Hello World!
 * isNan function returns true if the argument is not a number otherwise it is false.
 * NaN is a short form of Not a Number.
 
- **[⬆ Back to Top](#table-of-contents)**
+**[⬆ Back to Top](#table-of-contents)**
 ### Ques. Name the different types of pop up boxes in Javascript?
 There are three types of pop up boxes in Javascript<br>
 (i) alert() provides some information to the user with just an OK button<br>
@@ -577,4 +622,75 @@ function myStopFunction() {
 }
 </script>
 ```
+
+**[⬆ Back to Top](#table-of-contents)**
+### Ques. What is addEventListener & removeEventListener & useCapture?
+* The addEventListener() method attaches an event handler to the specified element.
+* you can add many event handlers to one element.
+__syntex:-__ element.addEventListener(event,function,useCapture);
+```javascript
+<script>
+document.getElementById("myBtn").addEventListener("click", function() {
+  alert("Hello World!");
+});
+</script>
+```
+* The removeEventListener() method removes event handlers that have been attached with the addEventListener() method.
+```javascript
+<script>
+document.getElementById("myDIV").addEventListener("mousemove", myFunction);
+
+function myFunction() {
+  document.getElementById("demo").innerHTML = Math.random();
+}
+
+function removeHandler() {
+  document.getElementById("myDIV").removeEventListener("mousemove", myFunction);
+}
+</script>
+```
+* useCapture have been 2 state - Ture or False
+
+**[⬆ Back to Top](#table-of-contents)**
+### Date Method
+```javascript
+var now = new Date();
+console.log(now); // VM146:1 Tue Mar 24 2020 11:10:38 GMT+0530 (India Standard Time)
+
+var now = new Date();
+console.log(now.getDate());   //24
+console.log(now.getDay());    // 2 [0-sunday, 1-monday]
+console.log(now.getFullYear()); //2020
+console.log(now.getHours());  //11
+console.log(now.getMonth());  //
+console.log(now.getMinutes());  //
+console.log(now.getSeconds());  //
+console.log(now.getMilliseconds()); //
+```
+```sql
+var now = new Date();
+now.setDate(11);
+console.log(now);
+
+setFullYear();
+setMonth();
+setHours();
+setMinutes();
+setSeconds();
+selMilliseconds();
+```
+
+### Window Open & Close method?
+```sql
+window.open(URL,name,specs)
+url:- www.example.com
+name:- _blank, _parent, _self, _top
+specs:- width hight top left
+```
+
+### moveTo moveBy?
+window open karke right sa 200 or lefet sa 200
+
+### innerHight, InnerWidth, OuterHight, outerWidth
+
 
