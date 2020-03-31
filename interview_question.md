@@ -7,8 +7,8 @@
 |  | [What is JavaScript?](#ques-What-is-JavaScript)|
 |  | [What is an ECMAScript?](#ques-What-is-an-ECMAScript)|
 |  |[Name some of the Javascript frameworks?](#Name-some-of-the-Javascript-frameworks)
-|  | [Difference between Java and JavaScript?](#ques-Difference-between-Java-and-JavaScript)|
-|  | [JavaScript Data Type?](#ques-JavaScript-Data-Type)|
+|  |[Difference between Java and JavaScript?](#ques-Difference-between-Java-and-JavaScript)|
+|  |[JavaScript Data Type?](#ques-JavaScript-Data-Type)|
 |  |[What is the javaScript Variable?](#ques-What-is-the-javaScript-Variable)|
 |  |[Dfference between var and Let?](#ques-difference-between-var-and-let)
 |  |[What is Operate in javascript?](#ques-What-is-Operate-in-javascript)|
@@ -27,6 +27,7 @@
 |  |[What is currying function?](#ques-What-is-currying-function)|
 |  |[What is Generator function?](#ques-What-is-Generator-function)|
 |  |[What is a callback function?](#ques-What-is-a-callback-function)|
+|  |[What is Closure?](#ques-Ques-What-is-Closure)
 |  |[What is callback in callback?](#ques-What-is-callback-in-callback)|
 |  |[What is the difference between write and writeln?](#ques-What-is-the-difference-between-write-and-writeln)|
 |  |[Name the different types of pop up boxes in Javascript?](#Ques-Name-the-different-types-of-pop-up-boxes-in-Javascript)|
@@ -114,7 +115,6 @@ __Undefined–__ Represents value not assigned. If a variable is only declared a
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is the loops?
-
 __While__<br>
 var a = 1;
 while (a<=10){
@@ -137,9 +137,8 @@ for(var a =1; a<=10; a++)
 }
 10 tak print hoga hallo
 ```
-```
-========================
-For in loop
+__For in loop__
+```javascript
 var obj = {
   name: mohit
   lname: saxena
@@ -149,7 +148,8 @@ for(var key in obj)
 {
   document.write(obj[key] + "<br>")
 }
-===================
+```
+```
 var a=1;
 do {
   document.write("hello");
@@ -259,12 +259,13 @@ __2. Non Persistent Cookie:-__ Non persistent cookies are stored in ram on the s
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is Local Storage in JavaScript?
+* The data will not be delete when the brower is closed and reopened.
 * The local storage is a read only Property of window object.
 * It stores the data in a web browser specifically to the domain and protocol.
 * It does not get sent to the server as it is stored locally in the web browser with no expiration date.
 * The data will not be deleted when the browser is closed and reopened and will be available the next day, week or year.
-Methods
 
+Methods:-<br>
 __1. setItem(key, value):-__ It allows to add a key/value pair to the storage obj. if the key already exists, the name value will overwrite the old value.<br>
 __2. getItem(Key):-__ It returns the value of the item that is set with the given key.<br>
 __3. key(n):-__ It returns the key of the item in the storage obj at the nth index which can be useful for looping.<br>
@@ -295,6 +296,16 @@ __Local Storage:–__ The data is not sent back to the server for every HTTP req
 __Session Storage:–__ It is similar to local storage; the only difference is while data stored in local storage has no expiration time, data stored in session storage gets cleared when the page session ends. Session Storage will leave when the browser is closed.<br>
 
 LocalStorage is same as SessionStorage but it persists the data even when the browser is closed and reopened(i.e it has no expiration time) whereas in sessionStorage data gets cleared when the page session ends.<br>
+```
+local storage ki vale persistent hoti hai
+
+session ki valu destroy ho jati hai jab tab close karte hhai
+seein ki value store tab wise hoti hai
+
+c       local   session  
+capicity:- 4kb  10mb  5mb
+accesibilty:- anywindow anywimdow same tab
+```
 
 Ans. Local Storage will stay until it is manually cleared through settings or program.
 Session Storage will leave when the browser is closed.
@@ -446,9 +457,9 @@ alert( sum(1, 2) ); // 3
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is currying function?
-* Currying is a technique of evaluating function with multiple arguments, into sequence of function with single argument.
-* Currying is a transformation of functions that translates a function from callable as f(a, b, c) into callable as f(a)(b)(c).
 * Currying is an advanced technique of working with functions. It’s used not only in JavaScript, but in other languages as well.
+* Currying is a transformation of functions that translates a function from callable as f(a, b, c) into callable as f(a)(b)(c).
+* Currying is a technique of evaluating function with multiple arguments, into sequence of function with single argument.
 * Currying helps you to avoid passing the same variable again and again.
 * Currying is the process of taking a function with multiple arguments and turning it into a sequence of functions each with only a single argument. Currying is named after a mathematician Haskell Curry. By applying currying, a n-ary function turns it into a unary function. 
 Syntex:-
@@ -475,8 +486,9 @@ function sum(a, b) {
 let curriedSum = curry(sum);
 
 alert( curriedSum(1)(2) ); // 3
+```
 
-
+```
 A partial invocation of a Javascript function is called Currying. Few arguments of a function are processed and a function is returned. Few more arguments are added by the returning function.
 
 
@@ -549,13 +561,37 @@ loadScript('/script1.js', function(script) {
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
+### Ques. What is Closure?
+* A closure is inner function that has access to the outer(enclosing) function's varibale.
+
+**[⬆ Back to Top](#table-of-contents)**
 ### Ques. What is a promise?
-A promise is an object that may produce a single value some time in the future with either a resolved value or a reason that it’s not resolved(for example, network error). It will be in one of the 3 possible states: fulfilled, rejected, or pending.
+* A promise is an object that may produce a single value some time in the future with either a resolved value or a reason that it’s not resolved(for example, network error). It will be in one of the 3 possible states: fulfilled, rejected, or pending.
+* A promise is an object that may produce a single value some time in the future: either a resolved value, or a reason that it’s not resolved (e.g., a network error occurred). A promise may be in one of 3 possible states: fulfilled, rejected, or pending. Promise users can attach callbacks to handle the fulfilled value or the reason for rejection.
     The syntax of promise would be as below
 ```javascript
 const promise = new Promise(function(resolve, reject) {
    // promise description
 })
+
+
+
+         
+var p1 = new Promise(function(resolve,reject){
+
+    setTimeout(()=>resolve("Resolve"),5000)
+})
+
+alert(11)
+alert(11)
+
+p1.then(function(value){
+  
+    console.log("333",value)
+
+})
+
+alert(12)
 ```
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -594,6 +630,7 @@ There are three types of pop up boxes in Javascript<br>
 (i) alert() provides some information to the user with just an OK button<br>
 (ii) confirm() asks a question to the user with two options Ok and cancel, and<br>
 (iii) prompt() takes an input from the user.
+
 
 
 **[⬆ Back to Top](#table-of-contents)**
@@ -692,5 +729,3 @@ specs:- width hight top left
 window open karke right sa 200 or lefet sa 200
 
 ### innerHight, InnerWidth, OuterHight, outerWidth
-
-
