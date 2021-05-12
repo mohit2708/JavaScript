@@ -2,52 +2,7 @@
 
 ### Table of Contents
 
-| No. | Questions |
-|---- | ---------|
-|  | [What is JavaScript?](#ques-What-is-JavaScript)|
-|  | [What is an ECMAScript?](#ques-What-is-an-ECMAScript)|
-|  |[Name some of the Javascript frameworks?](#Name-some-of-the-Javascript-frameworks)
-|  |[Difference between Java and JavaScript?](#ques-Difference-between-Java-and-JavaScript)|
-|  |[JavaScript Data Type?](#ques-JavaScript-Data-Type)|
-|  |[What is the javaScript Variable?](#ques-What-is-the-javaScript-Variable)|
-|  |[Dfference between var and Let?](#ques-difference-between-var-and-let)
-|  |[What is Operate in javascript?](#ques-What-is-Operate-in-javascript)|
-|  |[What is the javaScript Comment?](#ques-What-is-the-javaScript-Comment)|
-|  |[What is the difference between the operators '==' and '==='?](#ques-What-is-the-difference-between-the-operators-'=='-and-'===')|
-|  |[What is cookies?](#ques-What-is-cookies)|
-|  |[What is Local Storage in JavaScript?](#ques-What-is-Local-Storage-in-JavaScript)|
-|  |[What is Session Storage in JavaScript?](#ques-What-is-Session-Storage-in-JavaScript)|
-|  |[What is the difference between Local storage & Session storage](#ques-What-is-the-difference-between-Local-storage-&-Session-storage)|
-|  |[What is Proxy object?](#ques-What-is-Proxy-object)|
-|  |[What is JavaScript Object?](#ques-What-is-JavaScript-Object)|
-|  |[What are the possible ways to create objects in javascript?](#ques-What-are-the-possible-ways-to-create-objects-in-javascript)|
-|  |[What are the different error names from error object?](#ques-What-are-the-different-error-names-from-error-object)|
-|  |[What is JavaScript Function](#ques-What-is-JavaScript-Function)|
-|  |[What are lambda or arrow functions?](#ques-What-are-lambda-or-arrow-functions)|
-|  |[What is currying function?](#ques-What-is-currying-function)|
-|  |[What is Generator function?](#ques-What-is-Generator-function)|
-|  |[What is a callback function?](#ques-What-is-a-callback-function)|
-|  |[What is Closure?](#ques-Ques-What-is-Closure)
-|  |[What is callback in callback?](#ques-What-is-callback-in-callback)|
-|  |[What is the difference between write and writeln?](#ques-What-is-the-difference-between-write-and-writeln)|
-|  |[Name the different types of pop up boxes in Javascript?](#Ques-Name-the-different-types-of-pop-up-boxes-in-Javascript)|
-|  |[What is the setInterval & clearInterval?](#ques-What-is-the-setInterval-&-clearInterval)|
-|  |[What is addEventListener & removeEventListener & useCapture?](#Ques-What-is-addEventListener-&-removeEventListener-&-useCapture?)|
-|  |[]()|
 
-
-
-### Ques. What is JavaScript?
-__Ans.__
-* JavaScript is a Client-side as well as server side scripting language that can be inserted into HTML pages. JavaScript is also an object based Programming language.
-* JavaScript is the programming language of HTML and the Web.
-* JavaScript was created by Brendan Eich in September 1995.
-* JavaScript is a case sensitive language.
-* Netscape is the software company who developed JavaScript.
-
-**[⬆ Back to Top](#table-of-contents)**
-### Ques. What is an ECMAScript?
-__Ans.__ ECMAScript (European Computer Manufacturers Association) Script is a specification for the scripting language standards. It has standardized Javascript which made Javascript the best implementation of ECMAScript.
 
 **[⬆ Back to Top](#table-of-contents)**
 ### Name some of the Javascript frameworks?
